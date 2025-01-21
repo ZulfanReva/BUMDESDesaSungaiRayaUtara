@@ -33,7 +33,7 @@
                                 Layanan</a>
                             <a href="#">
                                 <div class="flex gap-[6px] items-center">
-                                    <img src="assets/images/icons/device-message-purple.svg" class="w-6 h-6"
+                                    <img src="assets/images/icons/hubungi-kami.png" class="w-6 h-6"
                                         alt="icon">
                                     <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                                 </div>
