@@ -33,83 +33,85 @@
                                 Layanan</a>
                             <a href="#">
                                 <div class="flex gap-[6px] items-center">
-                                    <img src="assets/images/icons/hubungi-kami.png" class="w-6 h-6"
-                                        alt="icon">
+                                    <img src="assets/images/icons/hubungi-kami.png" class="w-6 h-6" alt="icon">
                                     <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="w-[500px] h-[550px] shrink-0 overflow-hidden">
-                        <img src="assets/images/thumbnails/thumbnail-1.png" class="w-full h-full object-cover"
+                        <img src="assets/images/thumbnails/thumbnail-bumdes.png" class="w-full h-full object-cover"
                             alt="thumbnail">
                     </div>
                 </div>
             </section>
+
+
             <section id="brands-section" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] flex gap-[50px] justify-center">
                     <div class="group">
                         <div
-                            class="hidden w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/brand-1-purple.png" class="w-full h-full object-contain"
+                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
+                            <img src="assets/images/logos/logo-hss.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                         <div
-                            class="block w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/brand-1.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/brand-2-purple.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/brand-2.png" class="w-full h-full object-contain"
+                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
+                            <img src="assets/images/logos/logo-hss-bw.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                     </div>
                     <div class="group">
                         <div
-                            class="hidden w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/brand-3-purple.png" class="w-full h-full object-contain"
+                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
+                            <img src="assets/images/logos/logo-dpdt.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                         <div
-                            class="block w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/brand-3.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/brand-4-purple.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/brand-4.png" class="w-full h-full object-contain"
+                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
+                            <img src="assets/images/logos/logo-dpdt-bw.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                     </div>
                     <div class="group">
                         <div
-                            class="hidden w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/brand-5-purple.png" class="w-full h-full object-contain"
+                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
+                            <img src="assets/images/logos/logo-komdigi.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                         <div
-                            class="block w-[141px] h-[34px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/brand-5.png" class="w-full h-full object-contain"
+                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
+                            <img src="assets/images/logos/logo-komdigi-bw.png" class="w-full h-full object-contain"
+                                alt="logo">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
+                            <img src="assets/images/logos/logo-kemenkeu.png" class="w-full h-full object-contain"
+                                alt="logo">
+                        </div>
+                        <div
+                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
+                            <img src="assets/images/logos/logo-kemenkeu-bw.png" class="w-full h-full object-contain"
+                                alt="logo">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
+                            <img src="assets/images/logos/logo-telkom.png" class="w-full h-full object-contain"
+                                alt="logo">
+                        </div>
+                        <div
+                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
+                            <img src="assets/images/logos/logo-telkom-bw.png" class="w-full h-full object-contain"
                                 alt="logo">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section id="best-choices" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="flex flex-col gap-[30px] px-[75px]">
                     <h2 class="font-clash-display font-semibold text-[46px] text-center">Your Best Choice</h2>
