@@ -1,0 +1,11 @@
+/*! Color CSS BUMDes */
+
+/* Background color */
+.bg-weserve-beige {
+    background-color: #6B4F3F; /* Gunakan kode warna langsung */
+}
+
+/* Text color */
+.text-weserve-beige {
+    color: #6B4F3F !important; /* Gantilah dengan kode warna yang Anda gunakan */
+}
