@@ -79,13 +79,14 @@
 
         <!-- Tombol dan Ikon -->
         <div class="flex gap-[10px] items-center">
-            {{-- <a href="#">
+            <a href="#">
                 <div class="w-[44px] shrink-0">
                     <img src="{{ asset('assets/images/icons/cart-bg-white.svg') }}" alt="icon">
                 </div>
-            </a> --}}
-            <a href="#"
-                class="bg-weserve-beige rounded-full px-[30px] py-[10px] text-white font-semibold">Masuk</a>
+            </a>
+            <a href="#" class="font-medium text-black hover:bg-weserve-beige hover:text-white hover:font-semibold px-[30px] py-[10px] rounded-full">
+                Masuk
+            </a>
         </div>
     </div>
 </nav>

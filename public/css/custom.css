@@ -9,3 +9,60 @@
 .text-weserve-beige {
     color: #6B4F3F !important; /* Gantilah dengan kode warna yang Anda gunakan */
 }
+
+/* Animasi Teks */
+.wave .line span {
+    display: inline-block;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2s 2s, opacity 2s 2s; /* Tambahkan delay 2s */
+}
+
+.wave .line span.hidden {
+    transform: translateX(-20px);
+    opacity: 0;
+    transition-delay: 0s; /* Tidak ada delay pada saat di-hidden */
+}
+
+/* Animasi Gambar */
+@keyframes fadeZoom {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-zoom {
+    animation: fadeZoom 1.8s ease-in-out forwards;
+}
+
+/* Animasi Button */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+/* Hover Untuk Button */
+.bg-weserve-beige {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 79 63 / var(--tw-bg-opacity, 1)); /* Hex #6B4F3F */
+  }
+  
+  .hover\:bg-weserve-beige:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 79 63 / var(--tw-bg-opacity, 1)); /* Hex #6B4F3F */
+  }

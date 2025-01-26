@@ -22,9 +22,8 @@
                         <div class="flex flex-col gap-[10px]">
                             <h1
                                 class="font-clash-display text-[60px] leading-[100%] font-semibold min-h-[140px] line wave">
-                                <span class="line">Gerakan</span><br>
-                                <span class="line"><span class="text-weserve-beige">Usaha Desa</span> Mandiri</span>
-                            </h1>
+                                <span class="line">BUMDes Penggerak</span><br>
+                                <span class="line"><span class="text-weserve-beige">Ekonomi Desa</span></h1>
                             <p class="font-medium text-weserve-grey">Kami menyediakan berbagai layanan untuk
                                 memberdayakan
                                 masyarakat desa melalui pengelolaan usaha bersama.</p>
@@ -34,45 +33,47 @@
                         <script>
                             document.addEventListener('DOMContentLoaded', function() {
                                 const waveLines = document.querySelectorAll('.wave .line'); // Pilih semua elemen dengan kelas line
-                        
+
                                 waveLines.forEach(line => {
                                     const originalHTML = line.innerHTML; // Ambil HTML asli dari line
                                     line.innerHTML = ''; // Kosongkan konten dalam line
-                        
+
                                     // Proses HTML asli dan pisahkan tag dengan teks
                                     const tempDiv = document.createElement('div');
                                     tempDiv.innerHTML = originalHTML;
-                                    
+
                                     // Loop untuk setiap node dalam konten (termasuk teks dan elemen HTML)
                                     tempDiv.childNodes.forEach((node, index) => {
                                         if (node.nodeType === Node.TEXT_NODE) {
                                             node.textContent.split('').forEach((char, charIndex) => {
                                                 const span = document.createElement('span');
-                                                span.textContent = char === ' ' ? '\u00A0' : char; // Ganti spasi dengan nbsp
+                                                span.textContent = char === ' ' ? '\u00A0' :
+                                                    char; // Ganti spasi dengan nbsp
                                                 span.style.transitionDelay = `${(index + charIndex) * 0.1}s`;
                                                 line.appendChild(span);
                                             });
                                         } else if (node.nodeType === Node.ELEMENT_NODE) {
                                             const element = node.cloneNode(true);
-                                            element.style.transitionDelay = `${index * 0.1}s`; // Tetap tambahkan delay untuk animasi
+                                            element.style.transitionDelay =
+                                                `${index * 0.1}s`; // Tetap tambahkan delay untuk animasi
                                             line.appendChild(element);
                                         }
                                     });
                                 });
-                        
+
                                 function startWaveAnimation() {
                                     waveLines.forEach(line => {
                                         const spans = line.querySelectorAll('span');
                                         spans.forEach((span, index) => {
                                             // Pastikan bahwa setiap span memiliki transisi yang diterapkan
                                             span.style.transition = 'transform 2s, opacity 2s';
-                        
+
                                             // Gerakkan ke kiri dan atur opacity ke 0
                                             setTimeout(() => {
                                                 span.style.opacity = '0';
                                                 span.style.transform = 'translateX(-20px)';
                                             }, index * 100);
-                        
+
                                             // Reset posisi dan opacity setelah animasi selesai
                                             setTimeout(() => {
                                                 span.style.opacity = '1';
@@ -81,28 +82,28 @@
                                         });
                                     });
                                 }
-                        
+
                                 // Mulai animasi dan ulangi setiap 10 detik
                                 startWaveAnimation(); // Mulai animasi segera
                                 setInterval(startWaveAnimation, 10000); // Ulangi setiap 10 detik
                             });
                         </script>
 
-                        <div class="flex gap-5 items-center">
+                        <div class="flex gap-5 items-center animate-slide-up">
                             <a href="#"
                                 class="bg-weserve-beige rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
                                 Layanan</a>
                             <a href="#">
                                 <div class="flex gap-[6px] items-center">
                                     <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
-                                    <p class="font-semibold text-weserve-beige text-[18px]">Hubungi Kami</p>
+                                    <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="w-[500px] h-[550px] shrink-0 overflow-hidden">
-                        <img src="assets/images/thumbnails/thumbnail-bumdes.png" class="w-full h-full object-cover"
-                            alt="thumbnail">
+                        <img src="assets/images/thumbnails/thumbnail-bumdes.svg"
+                            class="w-full h-full object-cover animate-fade-zoom" alt="thumbnail">
                     </div>
                 </div>
             </section>
