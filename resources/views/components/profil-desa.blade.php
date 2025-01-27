@@ -127,7 +127,7 @@
                     </li>
                 </ul> --}}
                 <div>
-                    <a href="#" class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige hover:text-white">
+                    <a href="#" class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
                         Baca selengkapnya
                     </a>
                 </div>

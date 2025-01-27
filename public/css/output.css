@@ -666,6 +666,10 @@ html {
   z-index: 50;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .\!row-span-1 {
   grid-row: span 1 / span 1 !important;
 }
@@ -781,6 +785,42 @@ html {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.-mb-\[450px\] {
+  margin-bottom: -450px;
+}
+
+.-mb-\[300px\] {
+  margin-bottom: -300px;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.-mb-\[150px\] {
+  margin-bottom: -150px;
+}
+
+.-mb-\[200px\] {
+  margin-bottom: -200px;
+}
+
+.-mb-\[50px\] {
+  margin-bottom: -50px;
+}
+
+.-mb-\[100px\] {
+  margin-bottom: -100px;
+}
+
+.-mb-\[750px\] {
+  margin-bottom: -750px;
+}
+
+.-mb-\[75px\] {
+  margin-bottom: -75px;
 }
 
 .block {
@@ -930,6 +970,18 @@ html {
   height: 100%;
 }
 
+.h-\[55px\] {
+  height: 55px;
+}
+
+.h-\[52px\] {
+  height: 52px;
+}
+
+.h-\[53px\] {
+  height: 53px;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
@@ -1056,6 +1108,22 @@ html {
   width: 100%;
 }
 
+.w-\[55px\] {
+  width: 55px;
+}
+
+.w-\[52px\] {
+  width: 52px;
+}
+
+.w-\[53px\] {
+  width: 53px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1159,6 +1227,10 @@ html {
 
 .\!flex-row {
   flex-direction: row !important;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1279,6 +1351,26 @@ html {
 
 .gap-\[70px\] {
   gap: 70px;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-\[120px\] {
+  gap: 120px;
+}
+
+.gap-\[1200px\] {
+  gap: 1200px;
+}
+
+.gap-\[1px\] {
+  gap: 1px;
+}
+
+.gap-\[80px\] {
+  gap: 80px;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1744,6 +1836,26 @@ html {
   padding-bottom: 1.25rem;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[px\] {
+  padding-top: px;
+  padding-bottom: px;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-\[5px\] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1888,6 +2000,26 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[5px\] {
+  font-size: 5px;
 }
 
 .font-bold {

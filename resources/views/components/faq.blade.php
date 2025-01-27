@@ -75,7 +75,7 @@
                     <div class="flex justify-between cursor-pointer items-center">
                         <div class="flex items-center gap-[6px]">
                             <img src="assets/images/icons/device-message-white.svg" class="w-6 h-6" alt="icons">
-                            <h4 class="text-[20px] font-semibold text-white">Silahkan hubungi admin untuk pertanyaan lebih lanjut</h4>
+                            <h4 class="text-[20px] font-semibold text-white">Silahkan hubungi kami untuk pertanyaan lebih lanjut</h4>
                         </div>
                         <a href="#">
                             <img src="assets/images/icons/arrow-right-whitebg.svg" class="w-[30px] h-[30px]" alt="icons">
