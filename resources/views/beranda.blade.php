@@ -116,83 +116,7 @@
             <x-kenapa-kami></x-kenapa-kami>
 
             <!-- Section Partner & Sponsorship -->
-            <section id="brands-section" class="max-w-[1280px] w-full overflow-hidden mx-auto">
-                <h2 class="font-clash-display font-semibold text-[46px] text-center mb-10">Partner & Sponsorship</h2>
-                <div class="px-[75px] flex gap-[30px] justify-center">
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-hss.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-hss-bw.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-dpdt.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-dpdt-bw.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-komdigi.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-komdigi-bw.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-kemenkeu.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-kemenkeu-bw.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-telkom.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-telkom-bw.png" class="w-full h-full object-contain"
-                                alt="logo">
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div
-                            class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
-                            <img src="assets/images/logos/logo-umbjm.png" class="w-full h-full object-contain"
-                                alt="logo baru">
-                        </div>
-                        <div
-                            class="block w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
-                            <img src="assets/images/logos/logo-umbjm-bw.png" class="w-full h-full object-contain"
-                                alt="logo baru bw">
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <x-mitra-sponsorship></x-mitra-sponsorship>
 
             <section id="strong-ecosystem" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] flex gap-[70px] justify-start items-center">
@@ -216,16 +140,14 @@
                                 </div>
                             </div>
                             <div class="flex gap-4 bg-white rounded-[16px] p-5 w-[500px]">
-                                <img src="assets/images/icons/cpu-charge.svg" class="w-[46px] h-[46px]"
-                                    alt="icon">
+                                <img src="assets/images/icons/cpu-charge.svg" class="w-[46px] h-[46px]" alt="icon">
                                 <div class="flex flex-col gap-[2px]">
                                     <h3 class="font-bold text-[22px] leading-[24px]">450,392</h3>
                                     <p class="font-medium text-weserve-grey">All servers available</p>
                                 </div>
                             </div>
                             <div class="flex gap-4 bg-white rounded-[16px] p-5 w-[500px]">
-                                <img src="assets/images/icons/cloud-add.svg" class="w-[46px] h-[46px]"
-                                    alt="icon">
+                                <img src="assets/images/icons/cloud-add.svg" class="w-[46px] h-[46px]" alt="icon">
                                 <div class="flex flex-col gap-[2px]">
                                     <h3 class="font-bold text-[22px] leading-[24px]">$189 Mio</h3>
                                     <p class="font-medium text-weserve-grey">Websites are running good</p>
