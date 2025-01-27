@@ -14,7 +14,7 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-3.png"
+                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-1.png"
                                 alt="Bisnis Sosial" />
                         </div>
                         <div
@@ -37,7 +37,7 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-4.png"
+                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-2.png"
                                 alt="Keuangan/Banking" />
                         </div>
                         <div
@@ -61,7 +61,7 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-5.png"
+                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-3.png"
                                 alt="Bisnis Penyewaan" />
                         </div>
                         <div
@@ -84,7 +84,7 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-3.png"
+                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-4.png"
                                 alt="Lembaga Perantara" />
                         </div>
                         <div
@@ -107,7 +107,7 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-4.png"
+                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-5.png"
                                 alt="Usaha Bersama" />
                         </div>
                         <div
