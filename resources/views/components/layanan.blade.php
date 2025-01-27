@@ -24,9 +24,9 @@
                                 <p class="text-[#656565] text-ellipsis overflow-hidden whitespace-nowrap">Mengelola
                                     layanan sosial seperti pengelolaan air minum dan pengolahan sampah untuk warga.</p>
                             </div>
-                            <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
-                                <img class="h-full w-full object-contain"
-                                    src="assets/images/icons/arrow-right-black.svg" alt="Arrow Icon" />
+                            <div class="h-24 w-24 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right.png"
+                                    alt="Arrow Icon" />
                             </div>
                         </div>
                     </div>
@@ -48,9 +48,9 @@
                                     lembaga keuangan untuk membantu warga mendapatkan akses modal dengan bunga rendah.
                                 </p>
                             </div>
-                            <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
-                                <img class="h-full w-full object-contain"
-                                    src="assets/images/icons/arrow-right-black.svg" alt="Arrow Icon" />
+                            <div class="h-24 w-24 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right.png"
+                                    alt="Arrow Icon" />
                             </div>
                         </div>
                     </div>
@@ -71,9 +71,9 @@
                                 <p class="text-[#656565] text-ellipsis overflow-hidden whitespace-nowrap">Menjalankan
                                     usaha penyewaan alat dan perlengkapan untuk kebutuhan warga.</p>
                             </div>
-                            <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
-                                <img class="h-full w-full object-contain"
-                                    src="assets/images/icons/arrow-right-black.svg" alt="Arrow Icon" />
+                            <div class="h-24 w-24 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right.png"
+                                    alt="Arrow Icon" />
                             </div>
                         </div>
                     </div>
@@ -94,9 +94,9 @@
                                 <p class="text-[#656565] text-ellipsis overflow-hidden whitespace-nowrap">Menjadi
                                     perantara untuk distribusi komoditas dari warga ke pasar lebih luas.</p>
                             </div>
-                            <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
-                                <img class="h-full w-full object-contain"
-                                    src="assets/images/icons/arrow-right-black.svg" alt="Arrow Icon" />
+                            <div class="h-24 w-24 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right.png"
+                                    alt="Arrow Icon" />
                             </div>
                         </div>
                     </div>
@@ -118,11 +118,12 @@
                                     usaha terpadu di desa, seperti wisata desa, dengan memberi akses kepada warga untuk
                                     berperan dalam kegiatan tersebut.</p>
                             </div>
-                            <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
-                                <img class="h-full w-full object-contain"
-                                    src="assets/images/icons/arrow-right-black.svg" alt="Arrow Icon" />
+                            <div class="h-24 w-24 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right.png"
+                                    alt="Arrow Icon" />
                             </div>
                         </div>
+
                     </div>
                 </a>
             </div>
