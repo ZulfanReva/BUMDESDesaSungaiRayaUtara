@@ -1,6 +1,6 @@
 <section id="brands-section" class="relative w-full">
     <div class="mx-auto max-w-[1280px] space-y-[50px] px-[124px] py-[50px]">
-        <div class="space-y-3    text-center">
+        <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Mitra dan Sponsorship</h2>
             <p class="text-lg font-medium">Mengetahui lebih dalam tentang desa kami, sejarah, visi, misi,
                 fasilitas, dan prestasi yang telah diraih.</p>

@@ -118,6 +118,9 @@
             <!-- Section Partner & Sponsorship -->
             <x-mitra-sponsorship></x-mitra-sponsorship>
 
+        <!-- Section Layanan -->
+            <x-layanan></x-layanan>
+
             <section id="strong-ecosystem" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] flex gap-[70px] justify-start items-center">
                     <div class="w-[500px] h-[550px] shrink-0 overflow-hidden">

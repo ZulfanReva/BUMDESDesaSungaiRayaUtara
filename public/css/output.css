@@ -650,6 +650,10 @@ html {
   top: 0.5rem;
 }
 
+.-bottom-36 {
+  bottom: -9rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -925,8 +929,28 @@ html {
   height: 60px;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[131px\] {
+  height: 131px;
+}
+
+.h-\[475px\] {
+  height: 475px;
+}
+
 .max-h-32 {
   max-height: 8rem;
+}
+
+.max-h-\[475px\] {
+  max-height: 475px;
+}
+
+.max-h-\[47px\] {
+  max-height: 47px;
 }
 
 .min-h-\[140px\] {
@@ -1051,6 +1075,14 @@ html {
   width: 60px;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[214px\] {
+  width: 214px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1081,6 +1113,10 @@ html {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-\[352px\] {
+  max-width: 352px;
 }
 
 .flex-1 {
@@ -1159,6 +1195,10 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-items-center {
@@ -1345,9 +1385,21 @@ html {
   overflow-x: scroll;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -1397,6 +1449,14 @@ html {
 
 .rounded-\[32px\] {
   border-radius: 32px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-l-md {
@@ -1630,6 +1690,10 @@ html {
   padding: 50px;
 }
 
+.p-\[6px\] {
+  padding: 6px;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1723,6 +1787,11 @@ html {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .pb-12 {
@@ -2000,6 +2069,11 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#656565\] {
+  --tw-text-opacity: 1;
+  color: rgb(101 101 101 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2346,12 +2420,20 @@ html {
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
+.group:hover .group-hover\:bottom-6 {
+  bottom: 1.5rem;
+}
+
 .group:hover .group-hover\:block {
   display: block;
 }
 
 .group:hover .group-hover\:hidden {
   display: none;
+}
+
+.group:hover .group-hover\:w-\[400px\] {
+  width: 400px;
 }
 
 .group:hover .group-hover\:text-weserve-light {
@@ -2399,6 +2481,10 @@ html {
     flex: 1 1 0%;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -2427,6 +2513,11 @@ html {
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .sm\:pt-0 {
@@ -2472,6 +2563,10 @@ html {
     max-width: 20rem;
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -2482,6 +2577,15 @@ html {
 
   .md\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .md\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
   }
 }
 
@@ -2516,6 +2620,10 @@ html {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-col {
