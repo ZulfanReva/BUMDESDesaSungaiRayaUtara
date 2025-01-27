@@ -674,6 +674,10 @@ html {
   grid-row: span 1 / span 1 !important;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-mx-3 {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -982,6 +986,14 @@ html {
   height: 53px;
 }
 
+.h-\[175px\] {
+  height: 175px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
@@ -1122,6 +1134,10 @@ html {
 
 .w-\[50\%\] {
   width: 50%;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .min-w-0 {
@@ -1673,6 +1689,10 @@ html {
   --tw-gradient-to: #18181b var(--tw-gradient-to-position);
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .fill-red-500 {
   fill: #ef4444;
 }
@@ -1734,6 +1754,30 @@ html {
 
 .p-\[6px\] {
   padding: 6px;
+}
+
+.p-\[12px\] {
+  padding: 12px;
+}
+
+.p-\[px\] {
+  padding: px;
+}
+
+.p-\[24px\] {
+  padding: 24px;
+}
+
+.p-\[20px\] {
+  padding: 20px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
+}
+
+.p-\[p15\] {
+  padding: p15;
 }
 
 .px-10 {
@@ -2020,6 +2064,14 @@ html {
 
 .text-\[5px\] {
   font-size: 5px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .font-bold {

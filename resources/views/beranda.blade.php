@@ -130,71 +130,9 @@
             <!-- Section Kontak -->
             <x-kontak></x-kontak>
 
-            <footer class="relative z-10 w-full overflow-hidden mx-auto bg-[#070C29] -mt-[150px] pt-[150px]">
-                <div class="flex flex-col gap-[50px] px-[75px] pb-[50px] pt-[200px] max-w-[1280px] mx-auto">
-                    <div class="flex gap-[100px] items-center">
-                        <div class="flex flex-col gap-[30px]">
-                            <div class="w-[175px] h-[42px] shrink-0 overflow-hidden">
-                                <img src="assets/images/logos/logo-white.svg" class="w-full h-full object-cover"
-                                    alt="logo">
-                            </div>
-                            <p class="font-medium text-weserve-light leading-[28px]">We host your empire business today
-                                <br> using the latest technologies.
-                            </p>
-                            <div class="flex gap-[14px] items-center">
-                                <a href="#" class="bg-white rounded-full p-[10px]">
-                                    <img src="assets/images/icons/sms.svg" class="w-[24px] h-[24px]" alt="icon">
-                                </a>
-                                <a href="#" class="bg-white rounded-full p-[10px]">
-                                    <img src="assets/images/icons/global-purple.svg" class="w-[24px] h-[24px]"
-                                        alt="icon">
-                                </a>
-                                <a href="#" class="bg-white rounded-full p-[10px]">
-                                    <img src="assets/images/icons/call.svg" class="w-[24px] h-[24px]" alt="icon">
-                                </a>
-                                <a href="#" class="bg-white rounded-full p-[10px]">
-                                    <img src="assets/images/icons/video-play.svg" class="w-[24px] h-[24px]"
-                                        alt="icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
-                            <div class="flex flex-col gap-[30px]">
-                                <h4 class="text-white font-bold text-[18px]">Products</h4>
-                                <div class="flex flex-col gap-4">
-                                    <a href="#" class="text-weserve-light font-medium">Powerful Reports</a>
-                                    <a href="#" class="text-weserve-light font-medium">Blockchain</a>
-                                    <a href="#" class="text-weserve-light font-medium">Auto-Backup</a>
-                                    <a href="#" class="text-weserve-light font-medium">Data Science</a>
-                                    <a href="#" class="text-weserve-light font-medium">Auto-Scaling Up</a>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-[30px]">
-                                <h4 class="text-white font-bold text-[18px]">Resouces</h4>
-                                <div class="flex flex-col gap-4">
-                                    <a href="#" class="text-weserve-light font-medium">Support 24/7</a>
-                                    <a href="#" class="text-weserve-light font-medium">Help Center</a>
-                                    <a href="#" class="text-weserve-light font-medium">How-to Instructions</a>
-                                    <a href="#" class="text-weserve-light font-medium">Blog & Tips</a>
-                                    <a href="#" class="text-weserve-light font-medium">About Us</a>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-[30px]">
-                                <h4 class="text-white font-bold text-[18px]">Company</h4>
-                                <div class="flex flex-col gap-4">
-                                    <a href="#" class="text-weserve-light font-medium">Privacy & Policy</a>
-                                    <a href="#" class="text-weserve-light font-medium">Terms and Conditions</a>
-                                    <a href="#" class="text-weserve-light font-medium">Investor Relations</a>
-                                    <a href="#" class="text-weserve-light font-medium">Join With Us</a>
-                                    <a href="#" class="text-weserve-light font-medium">Our Statistics</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center text-weserve-light font-medium">All Rights Reserved • Copyright Weserve by
-                        BuildWithAngga 2024 in Bandung</p>
-                </div>
-            </footer>
+             <!-- Section Footer -->
+             <x-footer></x-footer>
+            
         </div>
     </div>
 </body>
