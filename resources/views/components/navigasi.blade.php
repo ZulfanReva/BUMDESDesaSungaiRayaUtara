@@ -23,7 +23,15 @@
                 </a>
             </li>
 
-            <!-- Dropdown untuk Layanan -->
+            <!-- Layanan BUMDes -->
+            <li>
+                <a href="{{ route('beranda.index') }}"
+                    class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
+                    Layanan BUMDes
+                </a>
+            </li>
+
+            {{-- <!-- Dropdown untuk Layanan -->
             <li class="relative group">
                 <button
                     class="font-medium flex items-center gap-1 px-3 py-2 rounded-lg text-black hover:text-weserve-beige focus:outline-none">
@@ -52,7 +60,7 @@
                     <li><a href="#kontraktor"
                             class="block px-4 py-2 text-black hover:text-weserve-beige rounded-lg">Kontraktor</a></li>
                 </ul>
-            </li>
+            </li> --}}
 
             <!-- Testimoni -->
             <li>
@@ -89,7 +97,7 @@
                 </div>
             </a> --}}
             <a href="#"
-                class="font-medium text-black hover:bg-weserve-beige hover:text-white hover:font-semibold px-[30px] py-[10px] rounded-full">
+                class="font-medium text-black hover:bg-weserve-beige-gradient hover:text-white hover:font-semibold px-[30px] py-[10px] rounded-full">
                 Masuk
             </a>
         </div>

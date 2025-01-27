@@ -7,7 +7,7 @@
         </div>
         <div class="grid grid-cols-4 gap-[30px]">
             <div
-                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige rounded-[32px] group transition-all duration-300">
+                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige-gradient rounded-[32px] group transition-all duration-300">
                 <div
                     class="block w-[60px] h-[60px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
                     <img src="assets/images/icons/kenapakami-1.png" alt="icon">
@@ -32,7 +32,7 @@
             </div>
 
             <div
-                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige rounded-[32px] group transition-all duration-300">
+                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige-gradient rounded-[32px] group transition-all duration-300">
                 <div
                     class="block w-[60px] h-[60px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
                     <img src="assets/images/icons/kenapakami-2.png" alt="icon">
@@ -57,7 +57,7 @@
             </div>
 
             <div
-                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige rounded-[32px] group transition-all duration-300">
+                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige-gradient rounded-[32px] group transition-all duration-300">
                 <div
                     class="block w-[60px] h-[60px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
                     <img src="assets/images/icons/kenapakami-3.png" alt="icon">
@@ -82,7 +82,7 @@
             </div>
 
             <div
-                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige rounded-[32px] group transition-all duration-300">
+                class="relative flex flex-col gap-[30px] px-5 py-[30px] bg-white hover:bg-weserve-beige-gradient rounded-[32px] group transition-all duration-300">
                 <div
                     class="block w-[60px] h-[60px] shrink-0 overflow-hidden group-hover:hidden transition-all duration-300">
                     <img src="assets/images/icons/kenapakami-4.png" alt="icon">

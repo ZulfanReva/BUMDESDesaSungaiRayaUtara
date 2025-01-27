@@ -92,7 +92,7 @@
 
                         <div class="flex gap-5 items-center animate-slide-up">
                             <a href="#"
-                                class="bg-weserve-beige rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
+                                class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
                                 Layanan</a>
                             <a href="#">
                                 <div class="flex gap-[6px] items-center">
@@ -118,8 +118,11 @@
             <!-- Section Partner & Sponsorship -->
             <x-mitra-sponsorship></x-mitra-sponsorship>
 
-        <!-- Section Layanan -->
+            <!-- Section Layanan -->
             <x-layanan></x-layanan>
+
+            <!-- Section Testimoni -->
+            <x-testimoni></x-testimoni>
 
             <section id="strong-ecosystem" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] flex gap-[70px] justify-start items-center">

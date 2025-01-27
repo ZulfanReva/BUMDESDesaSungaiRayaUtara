@@ -3,8 +3,8 @@
 
         <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Layanan BUMDes</h2>
-            <p class="text-lg font-medium">Mengetahui lebih dalam tentang desa kami, sejarah, visi, misi,
-                fasilitas, dan prestasi yang telah diraih.</p>
+            <p class="text-lg font-medium">Temukan berbagai layanan yang ditawarkan oleh BUMDes kami, yang bertujuan
+                untuk mendukung perkembangan ekonomi dan kesejahteraan desa.</p>
         </div>
 
         <div class="max-h-[475px]">
@@ -14,8 +14,8 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-1.png"
-                                alt="Bisnis Sosial" />
+                            <img class="h-full w-full object-cover"
+                                src="assets/images/thumbnails/thumbnail-layanan-1.png" alt="Bisnis Sosial" />
                         </div>
                         <div
                             class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
@@ -37,8 +37,8 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-2.png"
-                                alt="Keuangan/Banking" />
+                            <img class="h-full w-full object-cover"
+                                src="assets/images/thumbnails/thumbnail-layanan-2.png" alt="Keuangan/Banking" />
                         </div>
                         <div
                             class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
@@ -61,8 +61,8 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-3.png"
-                                alt="Bisnis Penyewaan" />
+                            <img class="h-full w-full object-cover"
+                                src="assets/images/thumbnails/thumbnail-layanan-3.png" alt="Bisnis Penyewaan" />
                         </div>
                         <div
                             class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
@@ -84,8 +84,8 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-4.png"
-                                alt="Lembaga Perantara" />
+                            <img class="h-full w-full object-cover"
+                                src="assets/images/thumbnails/thumbnail-layanan-4.png" alt="Lembaga Perantara" />
                         </div>
                         <div
                             class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
@@ -107,8 +107,8 @@
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
-                            <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-layanan-5.png"
-                                alt="Usaha Bersama" />
+                            <img class="h-full w-full object-cover"
+                                src="assets/images/thumbnails/thumbnail-layanan-5.png" alt="Usaha Bersama" />
                         </div>
                         <div
                             class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
