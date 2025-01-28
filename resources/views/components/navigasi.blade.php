@@ -18,15 +18,29 @@
 
             <!-- Profil Desa -->
             <li>
-                <a href="{{ route('beranda.index') }}"
+                <a href="#profil-desa"
                     class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
                     Profil Desa
                 </a>
             </li>
 
+            <!-- Kenapa Kami -->
+            <li>
+                <a href="#kenapa-kami" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
+                    Kenapa Kami
+                </a>
+            </li>
+
+            <!-- Mitra & Sponsorship -->
+            <li>
+                <a href="#mitra-sponsorship" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
+                    Mitra & Sponsorship
+                </a>
+            </li>
+
             <!-- Layanan BUMDes -->
             <li>
-                <a href="{{ route('beranda.index') }}"
+                <a href="#layanan"
                     class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
                     Layanan BUMDes
                 </a>
@@ -62,20 +76,6 @@
                             class="block px-4 py-2 text-black hover:text-weserve-beige rounded-lg">Kontraktor</a></li>
                 </ul>
             </li> --}}
-
-            <!-- Testimoni -->
-            <li>
-                <a href="#testimoni" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
-                    Testimoni
-                </a>
-            </li>
-
-            <!-- Hubungi Kami -->
-            <li>
-                <a href="#hubungi-kami" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
-                    Hubungi Kami
-                </a>
-            </li>
         </ul>
 
         <!-- JavaScript untuk menangani klik pada dropdown -->

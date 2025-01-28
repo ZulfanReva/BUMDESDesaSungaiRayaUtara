@@ -91,10 +91,10 @@
                         </script>
 
                         <div class="flex gap-5 items-center animate-slide-up">
-                            <a href="#"
+                            <a href="#layanan"
                                 class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
                                 Layanan</a>
-                            <a href="#">
+                            <a href="#" onclick="sendMessageToWA()">
                                 <div class="flex gap-[6px] items-center">
                                     <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
                                     <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
@@ -147,8 +147,8 @@
 
             <!-- Kontainer Kiri: Gambar -->
             <div class="w-1/2 h-full">
-                <img src="https://buildwithangga.com/themes/front/images/belajar-coding-product-design-kelas-online-buildwith-angga.png"
-                    class="w-full h-full object-cover" alt="Logo BUMDes">
+                <img src="assets/images/thumbnails/thumbnail-masuk.png" class="w-full h-full object-cover"
+                    alt="Logo BUMDes">
             </div>
 
             <!-- Spacer untuk jarak -->
@@ -208,6 +208,36 @@
         document.getElementById('closeModal').addEventListener('click', function() {
             document.getElementById('loginModal').classList.add('hidden');
         });
+    </script>
+
+    <!-- JavaScript untuk Hubungi Kami -->
+    <script>
+        function sendMessageToWA() {
+            // Mendapatkan jam saat ini
+            const hours = new Date().getHours();
+            let greeting;
+    
+            // Menentukan salam berdasarkan waktu
+            if (hours >= 5 && hours < 10) {
+                greeting = 'Pagi';
+            } else if (hours >= 10 && hours < 15) {
+                greeting = 'Siang';
+            } else if (hours >= 15 && hours < 18) {
+                greeting = 'Sore';
+            } else {
+                greeting = 'Malam';
+            }
+    
+            // Membuat pesan WhatsApp
+            const message = `Selamat ${greeting} Bapak/Ibu.\n\nSaya ingin bertanya seputar layanan BUMDes Sungai Raya Utara, sekian terimakasih.`;
+    
+            // Membuka WhatsApp dengan pesan yang sudah terisi otomatis
+            const phoneNumber = '+6287812741357';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+            // Membuka URL WhatsApp
+            window.open(url, '_blank');
+        }
     </script>
 
 

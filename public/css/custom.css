@@ -1,5 +1,10 @@
 /*! Color CSS BUMDes */
 
+/*! Animasi Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Background color */
 .bg-weserve-beige {
     background-color: #6b4f3f; /* Gunakan kode warna langsung */

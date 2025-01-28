@@ -1,5 +1,5 @@
-<section class="relative w-full">
-    <div class="mx-auto max-w-[1280px] space-y-[50px] px-[124px] py-[50px]">
+<section id="profil-desa" class="relative w-full pt-[100px]">
+    <div class="mx-auto max-w-[1280px] space-y-[50px] px-[124px]">
         <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Profil Desa</h2>
             <p class="text-lg font-medium">Mengetahui lebih dalam tentang desa kami, sejarah, visi, misi,
@@ -13,8 +13,7 @@
                 <div
                     class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1] transition-all duration-300">
                     <img src="assets/images/icons/sejarah-desa-white.png" alt="Sejarah Desa"
-                        class="icon stroke-white transition-all duration-300"
-                        style="width: 48px; height: 48px;" />
+                        class="icon stroke-white transition-all duration-300" style="width: 48px; height: 48px;" />
                 </div>
                 <span class="text-xl">Sejarah Desa</span>
             </button>
@@ -25,8 +24,7 @@
                 <div
                     class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1] transition-all duration-300">
                     <img src="assets/images/icons/visi-misi-white.png" alt="Visi Misi"
-                        class="icon stroke-white transition-all duration-300"
-                        style="width: 40px; height: 40px;" />
+                        class="icon stroke-white transition-all duration-300" style="width: 40px; height: 40px;" />
                 </div>
                 <span class="text-xl">Visi dan Misi</span>
             </button>
@@ -37,8 +35,7 @@
                 <div
                     class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1] transition-all duration-300">
                     <img src="assets/images/icons/fasilitas-desa-white.png" alt="Fasilitas Desa"
-                        class="icon stroke-white transition-all duration-300"
-                        style="width: 40px; height: 40px;" />
+                        class="icon stroke-white transition-all duration-300" style="width: 40px; height: 40px;" />
                 </div>
                 <span class="text-xl">Fasilitas Desa</span>
             </button>
@@ -49,8 +46,7 @@
                 <div
                     class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1] transition-all duration-300">
                     <img src="assets/images/icons/prestasi-desa-white.png" alt="Prestasi Desa"
-                        class="icon stroke-white transition-all duration-300"
-                        style="width: 40px; height: 40px;" />
+                        class="icon stroke-white transition-all duration-300" style="width: 40px; height: 40px;" />
 
                 </div>
                 <span class="text-xl">Prestasi Desa</span>
@@ -127,8 +123,9 @@
                     </li>
                 </ul> --}}
                 <div>
-                    <a href="#" class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
-                        Baca selengkapnya
+                    <a href="https://maps.app.goo.gl/6QcAhRHxBJJ7LPuy7" target="_blank"
+                        class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
+                        Lokasi Desa
                     </a>
                 </div>
             </div>

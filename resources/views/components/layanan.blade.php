@@ -1,5 +1,6 @@
-<section id="brands-section" class="relative w-full">
-    <div class="mx-auto max-w-[1280px] space-y-[50px] py-[50px]">
+<section id="layanan" class="relative w-full pt-[100px]">
+    <div class="mx-auto max-w-[1280px] space-y-[50px]">
+        
 
         <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Layanan BUMDes</h2>
