@@ -1,25 +1,24 @@
 <section id="kontak"
                 class="relative z-20 max-w-[1280px] w-full overflow-hidden mx-auto px-[75px] -mb-[200px]">
-                <div class="bg-weserve-beige-gradient rounded-[40px]">
+                <div class="bg-white rounded-[40px]">
                     <!-- Kontainer Utama -->
                     <div class="flex flex-row gap-[60px] items-center justify-between p-[50px]">
                         <!-- Bagian Kiri: Teks -->
                         <div class="flex flex-col gap-[40px] w-[50%]">
-                            <div class="flex flex-col gap-[10px] text-white">
-                                <h2 class="font-clash-display font-semibold text-[40px]">Mulai Berkontribusi untuk
+                            <div class="flex flex-col gap-[10px] text-weserve-beige">
+                                <h2 class="font-clash-display font-semibold text-[40px] ">Mulai Berkontribusi untuk
                                     Masyarakat</h2>
-                                <p class="leading-[32px]">Kami menyediakan berbagai layanan untuk memberdayakan
+                                <p class="leading-[32px] text-black">Kami menyediakan berbagai layanan untuk memberdayakan
                                     masyarakat desa
                                     melalui pengelolaan usaha bersama.</p>
                             </div>
-                            <div class="flex gap-5 items-center">
-                                <a href="#" class="bg-white rounded-full px-10 py-4 font-bold text-[15px]">Cari
+                            <div class="flex gap-5 items-center text-white">
+                                <a href="#" class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[15px]">Cari
                                     Tau Layanan Kami</a>
                                 <a href="#">
                                     <div class="flex gap-[6px] items-center">
-                                        <img src="assets/images/icons/device-message-white.svg" class="w-6 h-6"
-                                            alt="icon">
-                                        <p class="font-semibold text-white">Hubungi Kami</p>
+                                        <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
+                                        <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                                     </div>
                                 </a>
                             </div>
