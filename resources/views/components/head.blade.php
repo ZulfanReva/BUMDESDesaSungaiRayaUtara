@@ -18,6 +18,7 @@
     <!-- Bi Icon -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="{{ asset('css/output.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">

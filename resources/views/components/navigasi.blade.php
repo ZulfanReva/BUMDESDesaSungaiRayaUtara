@@ -2,7 +2,8 @@
     <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center px-[75px] py-[30px]">
         <!-- Logo -->
         <div class="w-[50px] shrink-0 overflow-hidden">
-            <img src="{{ asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain" alt="logo">
+            <img src="{{ asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
+                alt="logo">
         </div>
 
         <!-- Menu Dinamis -->
@@ -96,10 +97,27 @@
                     <img src="{{ asset('assets/images/icons/cart-bg-white.svg') }}" alt="icon">
                 </div>
             </a> --}}
-            <a href="#"
+            <a href="#" onclick="toggleModal()"
                 class="font-medium text-black hover:bg-weserve-beige-gradient hover:text-white hover:font-semibold px-[30px] py-[10px] rounded-full">
                 Masuk
             </a>
         </div>
+
+        <script>
+            // Fungsi untuk membuka modal
+            function toggleModal() {
+                const modal = document.getElementById('loginModal');
+                modal.classList.toggle('hidden');
+            }
+
+            // Tutup modal jika di luar modal diklik
+            window.onclick = function(event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            };
+        </script>
+
     </div>
 </nav>
