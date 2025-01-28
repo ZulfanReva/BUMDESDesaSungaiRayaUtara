@@ -138,7 +138,13 @@
 
     <!-- Modal -->
     <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
-        <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden">
+        <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
+            <!-- Tombol Close -->
+            <button id="closeModal"
+                class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                ✕
+            </button>
+
             <!-- Kontainer Kiri: Gambar -->
             <div class="w-1/2 h-full">
                 <img src="https://buildwithangga.com/themes/front/images/belajar-coding-product-design-kelas-online-buildwith-angga.png"
@@ -146,7 +152,7 @@
             </div>
 
             <!-- Spacer untuk jarak -->
-            <div class="w-4"></div> <!-- Ubah w-4 ke w-6, w-8, dll. untuk menyesuaikan jarak -->
+            <div class="w-4"></div>
 
             <!-- Kontainer Kanan: Form Masuk -->
             <div class="w-1/2 p-4 pr-8 flex flex-col justify-center">
@@ -171,12 +177,15 @@
 
                     <!-- Button Masuk -->
                     <button type="submit"
-                        class="w-full bg-weserve-beige-gradient text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-2 mb-3">Masuk</button>
+                        class="w-full bg-weserve-beige-gradient text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-2 mb-3">
+                        Masuk
+                    </button>
 
                     <!-- Button Buat Akun Baru -->
-                    <button type="submit"
-                        class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">Buat
-                        Akun Baru</button>
+                    <button type="button"
+                        class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
+                        Buat Akun Baru
+                    </button>
 
                     <!-- Horizontal Divider -->
                     <hr class="horizontal dark my-3">
@@ -193,6 +202,13 @@
             </div>
         </div>
     </div>
+
+    <!-- JavaScript untuk Menutup Modal -->
+    <script>
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('loginModal').classList.add('hidden');
+        });
+    </script>
 
 
 </body>
