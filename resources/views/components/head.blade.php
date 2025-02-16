@@ -20,6 +20,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="{{ asset('css/output.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/output.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/custom.css') }}" rel="stylesheet"> --}}
 </head>
