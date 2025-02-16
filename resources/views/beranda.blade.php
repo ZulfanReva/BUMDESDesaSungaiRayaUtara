@@ -137,7 +137,7 @@
     </div>
 
     <!-- Modal -->
-    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 justify-center items-center hidden z-50">
         <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
             <!-- Tombol Close -->
             <button id="closeModal"

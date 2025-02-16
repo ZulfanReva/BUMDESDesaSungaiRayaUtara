@@ -4,10 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicons -->
-    {{-- <link href="assets/images/logos/logo-bumdes-polos-white.png" rel="icon" sizes="64x64"> --}}
-    <img src="https://bumdesdesasungairayautara-production.up.railway.app/assets/images/logos/logo-bumdes-polos-brown.png" alt="Logo BUMDes" sizes="64x64">
-
-
+    <link href="https://bumdesdesasungairayautara-production.up.railway.app/assets/images/logos/logo-bumdes-polos-brown.png" rel="icon" sizes="64x64">
 
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
