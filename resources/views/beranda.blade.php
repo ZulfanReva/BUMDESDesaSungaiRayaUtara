@@ -137,7 +137,7 @@
     </div>
 
     <!-- Modal -->
-    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
         <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
             <!-- Tombol Close -->
             <button id="closeModal"
@@ -247,8 +247,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{{ asset('js/script.js') }}"></script>
-<script src="{{ asset('js/swiper.js') }}"></script>
-<script src="{{ asset('js/tab.js') }}"></script>
+<script src="https://bumdesdesasungairayautara-production.up.railway.app/js/script.js"></script>
+<script src="https://bumdesdesasungairayautara-production.up.railway.app/js/swiper.js"></script>
+<script src="https://bumdesdesasungairayautara-production.up.railway.app/js/tab.js"></script>
 
 </html>
