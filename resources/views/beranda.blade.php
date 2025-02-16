@@ -137,7 +137,7 @@
     </div>
 
     <!-- Modal -->
-    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
         <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
             <!-- Tombol Close -->
             <button id="closeModal"
@@ -216,7 +216,7 @@
             // Mendapatkan jam saat ini
             const hours = new Date().getHours();
             let greeting;
-    
+
             // Menentukan salam berdasarkan waktu
             if (hours >= 5 && hours < 10) {
                 greeting = 'Pagi';
@@ -227,14 +227,15 @@
             } else {
                 greeting = 'Malam';
             }
-    
+
             // Membuat pesan WhatsApp
-            const message = `Selamat ${greeting} Bapak/Ibu.\n\nSaya ingin bertanya seputar layanan BUMDes Sungai Raya Utara, sekian terimakasih.`;
-    
+            const message =
+                `Selamat ${greeting} Bapak/Ibu.\n\nSaya ingin bertanya seputar layanan BUMDes Sungai Raya Utara, sekian terimakasih.`;
+
             // Membuka WhatsApp dengan pesan yang sudah terisi otomatis
             const phoneNumber = '+6287812741357';
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
+
             // Membuka URL WhatsApp
             window.open(url, '_blank');
         }
