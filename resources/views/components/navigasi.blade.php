@@ -4,6 +4,8 @@
         <div class="w-[50px] shrink-0 overflow-hidden">
             <img src="{{ secure_asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
                 alt="logo">
+                {{-- <img src="{{ asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
+                alt="logo"> --}}
         </div>
 
         <!-- Menu Dinamis -->

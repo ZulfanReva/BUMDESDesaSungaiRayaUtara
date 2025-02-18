@@ -64,8 +64,8 @@
                         Sejarah Singkat Desa
                     </h2>
                     <p class="text-lg font-medium leading-8 text-justify">Bermula dari kumpulan masyarakat
-                        yang menetap dekat dengan sungai dan pegunungan, pada tahun 1980, sebuah resmi
-                        sebuah desa dibangun. Kini, desa ini telah berkembang menjadi desa yang maju dengan
+                        yang menetap, seiring berjalannya waktu pada tahun 1952, resmi
+                        sebuah desa dibentuk. Kini, desa ini telah berkembang menjadi desa yang maju dengan
                         peran penting dalam pengelolaan sumber daya alam.</p>
 
                 </div>
@@ -75,18 +75,26 @@
                         Visi dan Misi Desa
                     </h2>
                     <p class="text-lg font-medium leading-8 text-justify">
-                        <strong>Visi:</strong> Menjadi desa mandiri, maju, dan sejahtera melalui pengelolaan
-                        sumber daya alam yang berkelanjutan serta peningkatan kualitas hidup masyarakat.
+                        <strong>Visi:</strong> Terwujudnya Desa Sungai Raya Utara Yang Aman, Cerdas, Berakhlak Mulia
+                        serta Produktif dengan Pemerintahan Desa yang Terbuka.
                     </p>
                     <p class="text-lg font-medium leading-8 text-justify">
                         <strong>Misi:</strong>
                     </p>
                     <ul class="list-disc pl-5">
-                        <li>Meningkatkan kesejahteraan petani dan nelayan.</li>
-                        <li>Meningkatkan kualitas pendidikan dan kesehatan warga.</li>
-                        <li>Menjaga lingkungan dan memanfaatkan sumber daya alam bijak.</li>
-                        <li>Mendorong partisipasi aktif masyarakat dalam pembangunan.</li>
+                        <li>Mewujudkan Keamanan dan Ketertiban dalam kehidupan beragama di Desa Sungai Raya Utara.</li>
+                        <li>Meningkatkan kinerja Aparatur Pemerintah Desa sebagai bentuk pelayanan kepada Masyarakat di
+                            Desa.</li>
+                        <li>Mewujudkan tata kelola Pemerintahan Desa yang Terpercaya, Efektif, Bersih, Transparan, dan
+                            Akuntabel sebagai tanggung jawab terhadap Masyarakat Desa.</li>
+                        <li>Meningkatkan Pertumbuhan Ekonomi Desa.</li>
+                        <li>Meningkatkan Kualitas Sumber Daya Manusia.</li>
+                        <li>Meningkatkan Pembangunan Infrastruktur Desa dari Segi Fisik, ekonomi, pendidikan, sosial
+                            budaya, dan kesehatan.</li>
+                        <li>Meningkatkan Pemberdayaan Masyarakat Desa.</li>
+                        <li>Meningkatkan Pembinaan Masyarakat Desa.</li>
                     </ul>
+
                     </p>
                 </div>
 
@@ -94,18 +102,21 @@
                     <h2 class="text-[32px] font-bold leading-[46px]">Fasilitas Desa</h2>
                     <p class="text-lg font-medium leading-8 text-justify">Desa kami menyediakan fasilitas
                         lengkap untuk
-                        mendukung kesejahteraan warga, seperti akses pendidikan, layanan kesehatan, jaringan
-                        irigasi, sarana olahraga, ruang publik, dan transportasi desa yang memadai.</p>
+                        mendukung kesejahteraan warga, seperti akses pendidikan, layanan kesehatan, halte bus, tempat
+                        ibadah, dan keamanan yang didukung dengan Polsek Sungai Raya.</p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="prestasi-desa">
                     <h2 class="text-[32px] font-bold leading-[46px]">Prestasi Desa
                     </h2>
                     <p class="text-lg font-medium leading-8 text-justify">Desa kami telah meraih berbagai
-                        penghargaan
-                        atas inovasi di bidang lingkungan, pertanian berkelanjutan, dan pelayanan publik,
-                        menjadikannya contoh desa maju dan berprestasi di tingkat regional maupun nasional.
+                        penghargaan sepert:
                     </p>
+                    <ul class="list-disc pl-5">
+                        <li>Inovasi Terbaik 2, HSS Innovation Award (HIA) 2024</li>
+                        <li>Terbaik 2, Pengelolaan Keuangan Terbaik Pada Pemilihan Serentak 2024 (KPU)</li>
+                        <li>Top 30, HSS Innovation Award (HIA) 2021 dan 2022.</li>
+                    </ul>
                 </div>
 
                 {{-- <ul class="space-y-5">

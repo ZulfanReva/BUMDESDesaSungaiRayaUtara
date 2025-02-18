@@ -10,6 +10,8 @@
         <x-navigasi></x-navigasi>
 
         <div class="flex flex-col gap-[50px] pt-[50px]">
+
+
             <section id="hero-section" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] pt-[80px] flex justify-between items-center">
                     <div class="flex flex-col gap-[40px]">
@@ -91,9 +93,9 @@
                         </script>
 
                         <div class="flex gap-5 items-center animate-slide-up">
-                            <a href="#layanan"
+                            {{-- <a href="#layanan"
                                 class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
-                                Layanan</a>
+                                Layanan</a> --}}
                             <a href="#" onclick="sendMessageToWA()">
                                 <div class="flex gap-[6px] items-center">
                                     <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
@@ -137,68 +139,70 @@
     </div>
 
     <!-- Modal -->
-    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 justify-center items-center hidden z-50">
-        <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
-            <!-- Tombol Close -->
-            <button id="closeModal"
-                class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
-                ✕
-            </button>
+    <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
+                <!-- Tombol Close -->
+                <button id="closeModal"
+                    class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300 transition-all">
+                    ✕
+                </button>
 
-            <!-- Kontainer Kiri: Gambar -->
-            <div class="w-1/2 h-full">
-                <img src="assets/images/thumbnails/thumbnail-masuk.png" class="w-full h-full object-cover"
-                    alt="Logo BUMDes">
-            </div>
+                <!-- Kontainer Kiri: Gambar -->
+                <div class="w-1/2 h-full">
+                    <img src="assets/images/thumbnails/thumbnail-masuk.png" class="w-full h-full object-cover"
+                        alt="Logo BUMDes">
+                </div>
 
-            <!-- Spacer untuk jarak -->
-            <div class="w-4"></div>
+                <!-- Spacer untuk jarak -->
+                <div class="w-4"></div>
 
-            <!-- Kontainer Kanan: Form Masuk -->
-            <div class="w-1/2 p-4 pr-8 flex flex-col justify-center">
-                <h2 class="text-2xl font-semibold mb-4 text-center">Masuk ke Akun</h2>
-                <form action="{{ route('masuk') }}" method="POST">
-                    @csrf
-                    <!-- Email -->
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700">Email</label>
-                        <input type="email" id="email" name="email"
-                            class="w-full p-3 border rounded-[20px] mt-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#6b4f3f]"
-                            placeholder="Masukkan Email" required>
-                    </div>
+                <!-- Kontainer Kanan: Form Masuk -->
+                <div class="w-1/2 p-4 pr-8 flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold mb-4 text-center">Masuk ke Akun</h2>
+                    <form action="{{ route('masuk') }}" method="POST">
+                        @csrf
+                        <!-- Email -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full p-3 border rounded-[20px] mt-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#6b4f3f]"
+                                placeholder="Masukkan Email" required>
+                        </div>
 
-                    <!-- Password -->
-                    <div class="mb-6">
-                        <label for="password" class="block text-gray-700">Password</label>
-                        <input type="password" id="password" name="password"
-                            class="w-full p-3 border rounded-[20px] mt-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#6b4f3f]"
-                            placeholder="Masukkan Password" required>
-                    </div>
+                        <!-- Password -->
+                        <div class="mb-6">
+                            <label for="password" class="block text-gray-700">Password</label>
+                            <input type="password" id="password" name="password"
+                                class="w-full p-3 border rounded-[20px] mt-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#6b4f3f]"
+                                placeholder="Masukkan Password" required>
+                        </div>
 
-                    <!-- Button Masuk -->
-                    <button type="submit"
-                        class="w-full bg-weserve-beige-gradient text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-2 mb-3">
-                        Masuk
-                    </button>
-
-                    <!-- Button Buat Akun Baru -->
-                    <button type="button"
-                        class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
-                        Buat Akun Baru
-                    </button>
-
-                    <!-- Horizontal Divider -->
-                    <hr class="horizontal dark my-3">
-
-                    <!-- Masuk dengan Google -->
-                    <div class="text-center">
-                        <button type="button"
-                            class="w-full bg-gray-800 text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
-                            <img src="assets/images/logos/google.png" alt="Google Icon" class="w-5 h-5">
-                            Masuk / Daftar
+                        <!-- Button Masuk -->
+                        <button type="submit"
+                            class="w-full bg-weserve-beige-gradient text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-2 mb-3">
+                            Masuk
                         </button>
-                    </div>
-                </form>
+
+                        <!-- Button Buat Akun Baru -->
+                        <button type="button"
+                            class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
+                            Buat Akun Baru
+                        </button>
+
+                        <!-- Horizontal Divider -->
+                        <hr class="horizontal dark my-3">
+
+                        <!-- Masuk dengan Google -->
+                        <div class="text-center">
+                            <button type="button"
+                                class="w-full bg-gray-800 text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
+                                <img src="assets/images/logos/google.png" alt="Google Icon" class="w-5 h-5">
+                                Masuk / Daftar
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -233,7 +237,7 @@
                 `Selamat ${greeting} Bapak/Ibu.\n\nSaya ingin bertanya seputar layanan BUMDes Sungai Raya Utara, sekian terimakasih.`;
 
             // Membuka WhatsApp dengan pesan yang sudah terisi otomatis
-            const phoneNumber = '+6287812741357';
+            const phoneNumber = '+6283153128283';
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
             // Membuka URL WhatsApp

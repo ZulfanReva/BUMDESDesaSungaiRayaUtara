@@ -12,7 +12,7 @@
                 <div>
                     <div class="testimoni-card-body">
                         <div class="testimoni-author">
-                            <img src="assets/images/thumbnails/team-1.jpg" alt="..." class="avatar shadow">
+                            <img src="assets/images/thumbnails/team-1.png" alt="..." class="avatar shadow">
                             <div class="testimoni-name ps-2">
                                 <span>Rina Sari</span>
                                 <div class="stats">
@@ -37,7 +37,7 @@
                 <div class="testimoni-card bg-weserve-beige-gradient">
                     <div class="testimoni-card-body">
                         <div class="testimoni-author align-items-center">
-                            <img src="assets/images/thumbnails/team-2.jpg" alt="..." class="avatar shadow">
+                            <img src="assets/images/thumbnails/team-2.png" alt="..." class="avatar shadow">
                             <div class="testimoni-name ps-2">
                                 <span class="text-white">Andi Pratama</span>
                                 <div class="stats">
@@ -62,7 +62,7 @@
                 <div>
                     <div class="testimoni-card-body">
                         <div class="testimoni-author">
-                            <img src="assets/images/thumbnails/team-3.jpg" alt="..." class="avatar shadow">
+                            <img src="assets/images/thumbnails/team-3.png" alt="..." class="avatar shadow">
                             <div class="testimoni-name ps-2">
                                 <span>Pak Wawan</span>
                                 <div class="stats">

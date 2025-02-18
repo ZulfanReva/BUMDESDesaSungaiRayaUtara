@@ -33,8 +33,6 @@
                 </div>
             </div>
 
-
-
             <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
 
                 <!-- Profil Desa Section -->
@@ -64,7 +62,6 @@
                     <h4 class="text-white font-bold text-[18px]">Layanan Kami</h4>
                     <div class="flex flex-col gap-4">
                         <a href="#sosial-media" class="text-white">Sosial/Serving</a>
-                        <a href="#sosial-media" class="text-white">Keuangan/Banking</a>
                         <a href="#sosial-media" class="text-white">Penyewaan/Renting</a>
                         <a href="#sosial-media" class="text-white">Lembaga Perantara/Brokering</a>
                         <a href="#sosial-media" class="text-white">Usaha Bersama</a>

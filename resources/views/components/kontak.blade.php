@@ -12,9 +12,9 @@
                         melalui pengelolaan usaha bersama.</p>
                 </div>
                 <div class="flex gap-5 items-center text-white">
-                    <a href="#layanan"
+                    {{-- <a href="#layanan"
                         class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[15px]">Lihat
-                        Layanan</a>
+                        Layanan</a> --}}
                     <a href="#" onclick="sendMessageToWA()">
                         <div class="flex gap-[6px] items-center">
                             <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">

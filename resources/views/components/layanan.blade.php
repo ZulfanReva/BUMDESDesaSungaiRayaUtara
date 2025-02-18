@@ -9,12 +9,12 @@
         </div>
 
         <div class="max-h-[475px]">
-            <div class="flex justify-between items-stretch gap-5">
+            <div class="flex justify-between items-stretch gap-7">
                 <!-- Bisnis Sosial/Serving -->
                 <a href="">
                     <div class="group relative overflow-hidden">
                         <div
-                            class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                            class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
                             <img class="h-full w-full object-cover"
                                 src="assets/images/thumbnails/thumbnail-layanan-1.png" alt="Bisnis Sosial" />
                         </div>
@@ -33,7 +33,7 @@
                     </div>
                 </a>
 
-                <!-- Keuangan/Banking -->
+                {{-- <!-- Keuangan/Banking -->
                 <a href="">
                     <div class="group relative overflow-hidden">
                         <div
@@ -55,13 +55,13 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a> --}}
 
                 <!-- Bisnis Penyewaan/Renting -->
                 <a href="">
                     <div class="group relative overflow-hidden">
                         <div
-                            class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                            class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
                             <img class="h-full w-full object-cover"
                                 src="assets/images/thumbnails/thumbnail-layanan-3.png" alt="Bisnis Penyewaan" />
                         </div>
@@ -84,7 +84,7 @@
                 <a href="">
                     <div class="group relative overflow-hidden">
                         <div
-                            class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                            class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
                             <img class="h-full w-full object-cover"
                                 src="assets/images/thumbnails/thumbnail-layanan-4.png" alt="Lembaga Perantara" />
                         </div>
@@ -107,7 +107,7 @@
                 <a href="">
                     <div class="group relative overflow-hidden">
                         <div
-                            class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                            class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
                             <img class="h-full w-full object-cover"
                                 src="assets/images/thumbnails/thumbnail-layanan-5.png" alt="Usaha Bersama" />
                         </div>
