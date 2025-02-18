@@ -138,7 +138,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal Login -->
     <div id="loginModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 hidden z-50">
         <div class="flex items-center justify-center min-h-screen">
             <div class="bg-white rounded-[40px] flex max-w-[800px] w-full overflow-hidden relative">
@@ -160,7 +160,9 @@
                 <!-- Kontainer Kanan: Form Masuk -->
                 <div class="w-1/2 p-4 pr-8 flex flex-col justify-center">
                     <h2 class="text-2xl font-semibold mb-4 text-center">Masuk ke Akun</h2>
-                    <form action="{{ route('masuk') }}" method="POST">
+
+                    <!-- Form Login -->
+                    <form action="{{ route('login') }}" method="POST">
                         @csrf
                         <!-- Email -->
                         <div class="mb-4">
@@ -184,6 +186,13 @@
                             Masuk
                         </button>
 
+                        <!-- Pesan Error -->
+                        @error('email')
+                            <div class="text-red-500 text-sm mb-2">
+                                {{ $message }}
+                            </div>
+                        @enderror
+
                         <!-- Button Buat Akun Baru -->
                         <button type="button"
                             class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
@@ -206,6 +215,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- JavaScript untuk Menutup Modal -->
     <script>
