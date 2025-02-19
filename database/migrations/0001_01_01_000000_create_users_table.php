@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password')->nullable(); // Bisa null jika login via Google
             $table->string('google_id')->nullable()->unique(); // Untuk login dengan Google
-            $table->enum('role', ['superadmin', 'admin'])->default('admin'); // Default admin
+            $table->enum('role', ['Super Admin', 'Admin'])->default('admin'); // Default admin
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

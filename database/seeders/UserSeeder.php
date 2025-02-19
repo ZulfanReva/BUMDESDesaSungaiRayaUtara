@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'nama' => 'Super Admin BUMDes Sungai Raya Utara',
             'email' => 'superadmin@bumdessru.com',
             'password' => Hash::make('superadmin@bumdessru.com'),
-            'role' => 'superadmin', // Pastikan ada kolom 'role' di tabel users
+            'role' => 'Super Admin', // Pastikan ada kolom 'role' di tabel users
         ]);
 
         // Admin
@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
             'nama' => 'BUMDes Sungai Raya Utara',
             'email' => 'admin@bumdessru.com',
             'password' => Hash::make('admin@bumdessru.com'),
-            'role' => 'admin',
+            'role' => 'Admin',
         ]);
     }
 }
