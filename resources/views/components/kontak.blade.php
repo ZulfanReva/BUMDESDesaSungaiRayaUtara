@@ -16,7 +16,7 @@
                         class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[15px]">Lihat
                         Layanan</a> --}}
                     <a href="#" onclick="sendMessageToWA()">
-                        <div class="flex gap-[6px] items-center">
+                        <div class="flex gap-[6px] items-center zoom-in">
                             <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
                             <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                         </div>

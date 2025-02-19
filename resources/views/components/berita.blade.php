@@ -44,7 +44,7 @@
                             </a>
                         </div>
                         <div class="news-card-body">
-                            <span class="news-category-info">Bisnis Penyewaan</span>
+                            <span class="news-category-beige">Bisnis Penyewaan</span>
                             <a href="javascript:;" class="news-title">
                                 Penyewaan Alat Pertanian
                             </a>
@@ -72,7 +72,7 @@
                             </a>
                         </div>
                         <div class="news-card-body">
-                            <span class="news-category-warning">Lembaga Perantara</span>
+                            <span class="news-category-info">Lembaga Perantara</span>
                             <a href="javascript:;" class="news-title">
                                 Pusat Distribusi Produk Lokal
                             </a>
@@ -97,7 +97,8 @@
 
         <!-- Tombol Lihat Semua Berita -->
         <div class="text-center mt-6">
-            <a href="/berita" class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
+            <a href="/berita"
+                class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
                 Lihat Semua Berita
             </a>
         </div>
@@ -133,6 +134,12 @@
         width: 33.33333%;
         padding-right: 15px;
         padding-left: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .news-column:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
     }
 
     .news-card {
@@ -180,6 +187,18 @@
 
     .news-category-info {
         background-image: linear-gradient(310deg, #2196f3, #0d47a1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    .news-category-beige {
+        background-image: linear-gradient(310deg, #6b4f3f, #b88f7f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-transform: uppercase;

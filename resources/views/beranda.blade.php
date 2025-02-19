@@ -26,10 +26,9 @@
                                 class="font-clash-display text-[60px] leading-[100%] font-semibold min-h-[140px] line wave">
                                 <span class="line">BUMDes Penggerak</span><br>
                                 <span class="line"><span class="text-weserve-beige">Ekonomi Desa</span>
-                            </h1>
+</h1>
                             <p class="font-medium text-weserve-grey">Kami menyediakan berbagai layanan untuk
-                                memberdayakan
-                                masyarakat desa melalui pengelolaan usaha bersama.</p>
+                                memberdayakan masyarakat desa melalui pengelolaan usaha bersama.</p>
                         </div>
 
                         <!-- Script Teks -->
@@ -92,16 +91,27 @@
                             });
                         </script>
 
-                        <div class="flex gap-5 items-center animate-slide-up">
+                        <div class="flex gap-5 items-center">
                             {{-- <a href="#layanan"
                                 class="bg-weserve-beige-gradient rounded-full px-10 py-4 font-bold text-[18px] text-white">Lihat
                                 Layanan</a> --}}
                             <a href="#" onclick="sendMessageToWA()">
-                                <div class="flex gap-[6px] items-center">
+                                <div class="flex gap-[6px] items-center zoom-in">
                                     <img src="assets/images/icons/hubungi-kami.png" class="w-10 h-10" alt="icon">
                                     <p class="font-semibold text-weserve-beige">Hubungi Kami</p>
                                 </div>
                             </a>
+
+
+                            <style>
+                                .zoom-in {
+                                    transition: transform 0.3s ease-in-out;
+                                }
+
+                                .zoom-in:hover {
+                                    transform: scale(1.1);
+                                }
+                            </style>
                         </div>
                     </div>
                     <div class="w-[500px] h-[550px] shrink-0 overflow-hidden">
@@ -190,21 +200,21 @@
                         </button>
 
                         <!-- Button Buat Akun Baru -->
-                        <button type="button"
+                        <a href="{{ route('error.404') }}"
                             class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
                             Buat Akun Baru
-                        </button>
+                        </a>
 
                         <!-- Horizontal Divider -->
                         <hr class="horizontal dark my-3">
 
                         <!-- Masuk dengan Google -->
                         <div class="text-center">
-                            <button type="button"
+                            <a href="{{ route('error.404') }}"
                                 class="w-full bg-gray-800 text-white py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
                                 <img src="assets/images/logos/google.png" alt="Google Icon" class="w-5 h-5">
                                 Masuk / Daftar
-                            </button>
+                            </a>
                         </div>
                     </form>
                 </div>

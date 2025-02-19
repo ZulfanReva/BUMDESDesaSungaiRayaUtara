@@ -8,7 +8,12 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\SuperAdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\ProfileController; // Jangan lupa import ProfileController
+use App\Http\Controllers\ProfileController;
+
+// Halaman error 404
+Route::get('/404', function () {
+    return view('errors.404');
+})->name('error.404');
 
 // Halaman utama
 Route::get('/', [BerandaController::class, 'index'])->name('beranda.index');

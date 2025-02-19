@@ -72,6 +72,6 @@
         </div>
         <p class="text-center text-white font-medium">All Rights Reserved • Copyright BUMDes Sungai Raya Utara
             by
-            ZulfanReva 2025 in Banjarmasin</p>
+            ZulfanReva</p>
     </div>
 </footer>
