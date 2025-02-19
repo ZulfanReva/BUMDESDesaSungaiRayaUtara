@@ -126,6 +126,9 @@
             <!-- Section Testimoni -->
             <x-testimoni></x-testimoni>
 
+            <!-- Section Berita -->
+            <x-berita></x-berita>
+
             <!-- Section FAQ -->
             <x-faq></x-faq>
 

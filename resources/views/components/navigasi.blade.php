@@ -2,9 +2,9 @@
     <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center px-[75px] py-[30px]">
         <!-- Logo -->
         <div class="w-[50px] shrink-0 overflow-hidden">
-            <img src="{{ secure_asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
-                alt="logo">
-                {{-- <img src="{{ asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
+            <img src="{{ secure_asset('assets/images/logos/logo-bumdes-polos-brown.png') }}"
+                class="w-full h-auto object-contain" alt="logo">
+            {{-- <img src="{{ asset('assets/images/logos/logo-bumdes-polos-brown.png') }}" class="w-full h-auto object-contain"
                 alt="logo"> --}}
         </div>
 
@@ -20,8 +20,7 @@
 
             <!-- Profil Desa -->
             <li>
-                <a href="#profil-desa"
-                    class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
+                <a href="#profil-desa" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
                     Profil Desa
                 </a>
             </li>
@@ -33,18 +32,25 @@
                 </a>
             </li>
 
-            <!-- Mitra & Sponsorship -->
+            {{-- <!-- Mitra & Sponsorship -->
             <li>
                 <a href="#mitra-sponsorship" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
                     Mitra & Sponsorship
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Layanan BUMDes -->
             <li>
-                <a href="#layanan"
+                <a href="#layanan" class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
+                    Layanan
+                </a>
+            </li>
+
+            <!-- Berita BUMDes -->
+            <li>
+                <a href="#berita"
                     class="font-medium text-black hover:text-weserve-beige px-3 py-2 rounded-lg">
-                    Layanan BUMDes
+                    Berita
                 </a>
             </li>
 
