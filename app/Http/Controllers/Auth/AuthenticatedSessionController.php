@@ -8,6 +8,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use App\Models\User;
+use Illuminate\Validation\ValidationException;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -22,12 +24,27 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
+    public function store(Request $request)
     {
-        $request->authenticate();
+        // Validasi input
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
 
+        // Cek apakah email ada di database
+        $user = User::where('email', $request->email)->first();
+        if (!$user) {
+            return back()->with('error', 'Email tidak ditemukan');
+        }
+
+        // Coba login dengan kredensial yang diberikan
+        if (!Auth::attempt($request->only('email', 'password'), $request->filled('remember'))) {
+            return back()->with('error', 'Password salah');
+        }
+
+        // Regenerasi sesi jika login berhasil
         $request->session()->regenerate();
-
         return redirect()->intended(route('dashboard', absolute: false));
     }
 

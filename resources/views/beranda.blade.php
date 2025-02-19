@@ -189,13 +189,6 @@
                             Masuk
                         </button>
 
-                        <!-- Pesan Error -->
-                        @error('email')
-                            <div class="text-red-500 text-sm mb-2">
-                                {{ $message }}
-                            </div>
-                        @enderror
-
                         <!-- Button Buat Akun Baru -->
                         <button type="button"
                             class="w-full bg-gray-200 text-weserve-beige py-3 rounded-[20px] font-semibold flex items-center justify-center gap-3">
@@ -219,13 +212,27 @@
         </div>
     </div>
 
-
-    <!-- JavaScript untuk Menutup Modal -->
+    <!-- JavaScript untuk Menampilkan SweetAlert dan Menjaga Modal Tetap Terbuka -->
     <script>
         document.getElementById('closeModal').addEventListener('click', function() {
             document.getElementById('loginModal').classList.add('hidden');
         });
+
+        // Jika ada error, modal login tetap terbuka dan SweetAlert2 akan muncul
+        @if (session('error'))
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('loginModal').classList.remove('hidden');
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Maaf..',
+                    text: '{{ session('error') }}',
+                    confirmButtonColor: '#d33',
+                });
+            });
+        @endif
     </script>
+
 
     <!-- JavaScript untuk Hubungi Kami -->
     <script>
