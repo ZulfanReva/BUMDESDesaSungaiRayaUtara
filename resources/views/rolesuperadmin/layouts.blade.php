@@ -8,7 +8,6 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
-                <!-- Header Profil Desa -->
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Profil Desa</h3>
 
                 <table class="w-full border-collapse">
@@ -18,147 +17,121 @@
                             <th class="px-4 py-2 text-gray-800 dark:text-gray-100 rounded-tr-lg">Aksi</th>
                         </tr>
                     </thead>
-
                     <tbody>
-                        <tr class="border-b dark:border-gray-700">
-                            <td class="px-4 py-3 text-gray-900 dark:text-gray-100">Sejarah Desa</td>
-                            <td class="px-4 py-3">
-                                <button onclick="openModal('Sejarah Desa', '{{ $profilDesa->sejarah_desa ?? '' }}')"
-                                    class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
-                                    Edit
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b dark:border-gray-700">
-                            <td class="px-4 py-3 text-gray-900 dark:text-gray-100">Visi & Misi Desa</td>
-                            <td class="px-4 py-3">
-                                <!-- Fixed button with data attribute -->
-                                <button onclick="openModalCustom(this)" data-section="Visi & Misi Desa"
-                                    data-field="visi_misi" data-content="{{ $profilDesa->visi_misi ?? '' }}"
-                                    class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
-                                    Edit
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b dark:border-gray-700">
-                            <td class="px-4 py-3 text-gray-900 dark:text-gray-100">Fasilitas Desa</td>
-                            <td class="px-4 py-3">
-                                <button onclick="openModal('Fasilitas Desa', '{{ $profilDesa->fasilitas_desa ?? '' }}')"
-                                    class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
-                                    Edit
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 text-gray-900 dark:text-gray-100">Prestasi Desa</td>
-                            <td class="px-4 py-3">
-                                <!-- Fixed button with data attribute -->
-                                <button onclick="openModalCustom(this)" data-section="Prestasi Desa"
-                                    data-field="prestasi_desa" data-content="{{ $profilDesa->prestasi_desa ?? '' }}"
-                                    class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
-                                    Edit
-                                </button>
-                            </td>
-                        </tr>
+                        @foreach (['sejarah_desa' => 'Sejarah Desa', 'visi_misi' => 'Visi & Misi Desa', 'fasilitas_desa' => 'Fasilitas Desa', 'prestasi_desa' => 'Prestasi Desa'] as $field => $label)
+                            <tr class="border-b dark:border-gray-700">
+                                <td class="px-4 py-3 text-gray-900 dark:text-gray-100">{{ $label }}</td>
+                                <td class="px-4 py-3">
+                                    <button onclick="openModalCustom(this)" data-section="{{ $label }}"
+                                        data-field="{{ $field }}" data-content="{{ $profilDesa->$field ?? '' }}"
+                                        class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
-
                 </table>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <!-- Modal -->
     <div id="editModal"
         class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[500px]">
-            <h2 class="text-[32px] font-bold leading-[46px] font-clash-display text-gray-900 dark:text-gray-100"
+        <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[700px] max-w-[90vw] h-[500px] max-h-[90vh] flex flex-col">
+            <h2 class="text-[32px] font-bold leading-[46px] font-clash-display text-gray-900 dark:text-gray-100 mb-4"
                 id="modalTitle">Edit Layout</h2>
 
-            <form id="editForm">
+            <form id="editForm" class="flex flex-col flex-grow">
                 @csrf
                 <div class="mb-4">
                     <label class="block text-gray-700 dark:text-gray-300">Judul:</label>
                     <input type="text" id="title" name="title"
-                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white" readonly>
+                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-gray-400 italic" readonly>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-4 flex-grow">
                     <label class="block text-gray-700 dark:text-gray-300">Deskripsi:</label>
-                    <textarea id="description" name="description" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white"></textarea>
+                    <textarea id="description" name="description"
+                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white h-[200px] resize-none overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-900"></textarea>
                 </div>
 
-                <!-- Hidden field to store the database field name -->
-                <input type="hidden" id="dbFieldName" name="dbFieldName" value="">
+                <input type="hidden" id="dbFieldName" name="dbFieldName">
 
-                <div class="flex justify-end">
+                <div class="flex justify-end space-x-3 mt-4">
                     <button type="button"
-                        class="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition mr-2"
+                        class="w-full sm:w-auto px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition"
                         onclick="closeModal()">Batal</button>
                     <button type="submit"
-                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">Simpan</button>
+                        class="w-full sm:w-auto px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">Simpan</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- Script Modal dan Form Auto-Fill -->
-    <!-- Modal -->
-    <div id="editModal"
-        class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[500px]">
-            <h2 class="text-[32px] font-bold leading-[46px] font-clash-display text-gray-900 dark:text-gray-100"
-                id="modalTitle">Edit Layout</h2>
-
-            <form id="editForm">
-                @csrf
-                <div class="mb-4">
-                    <label class="block text-gray-700 dark:text-gray-300">Judul:</label>
-                    <input type="text" id="title" name="title"
-                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white" readonly>
-                </div>
-
-                <div class="mb-4">
-                    <label class="block text-gray-700 dark:text-gray-300">Deskripsi:</label>
-                    <textarea id="description" name="description" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white"></textarea>
-                </div>
-
-                <input type="hidden" id="dbFieldName" name="dbFieldName" value="">
-
-                <div class="flex justify-end">
-                    <button type="button"
-                        class="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition mr-2"
-                        onclick="closeModal()">Batal</button>
-                    <button type="submit"
-                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        function openModal(section, content) {
-            document.getElementById('modalTitle').innerText = section;
-            document.getElementById('title').value = section;
-            document.getElementById('description').value = content;
-            document.getElementById('dbFieldName').value = '';
-            const modal = document.getElementById('editModal');
-            modal.classList.remove('opacity-0', 'pointer-events-none');
-            console.log("Modal opened for: " + section);
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("editForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const form = this;
+                const dbFieldName = document.getElementById("dbFieldName").value;
+                const description = document.getElementById("description").value;
+                const token = document.querySelector('input[name="_token"]').value;
+
+                fetch("{{ route('superadmin.layouts.update') }}", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "X-CSRF-TOKEN": token
+                        },
+                        body: JSON.stringify({
+                            dbFieldName: dbFieldName,
+                            description: description
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === "success") {
+                            Swal.fire({
+                                title: "Berhasil!",
+                                text: data.message,
+                                icon: "success",
+                                confirmButtonText: "OK"
+                            }).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire({
+                                title: "Gagal!",
+                                text: data.message || "Terjadi kesalahan.",
+                                icon: "error",
+                                confirmButtonText: "OK"
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        Swal.fire({
+                            title: "Gagal!",
+                            text: "Terjadi kesalahan dalam menyimpan data.",
+                            icon: "error",
+                            confirmButtonText: "OK"
+                        });
+                    });
+            });
+        });
 
         function openModalCustom(buttonElement) {
-            const section = buttonElement.getAttribute('data-section');
-            const content = buttonElement.getAttribute('data-content');
-            const fieldName = buttonElement.getAttribute('data-field');
+            document.getElementById('modalTitle').innerText = 'Edit ' + buttonElement.getAttribute('data-section');
+            document.getElementById('title').value = buttonElement.getAttribute('data-section');
+            document.getElementById('description').value = buttonElement.getAttribute('data-content');
+            document.getElementById('dbFieldName').value = buttonElement.getAttribute('data-field');
 
-            document.getElementById('modalTitle').innerText = section;
-            document.getElementById('title').value = section;
-            document.getElementById('description').value = content;
-            document.getElementById('dbFieldName').value = fieldName;
             const modal = document.getElementById('editModal');
             modal.classList.remove('opacity-0', 'pointer-events-none');
-            console.log("Custom modal opened for: " + section + ", field: " + fieldName);
         }
 
         function closeModal() {

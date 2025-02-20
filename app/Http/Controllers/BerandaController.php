@@ -26,10 +26,8 @@ class BerandaController extends Controller
             ['name' => 'Hubungi Kami', 'route' => 'beranda.index'],
         ];
 
-        // Ambil data profil desa dari database
-        $profil = ProfilDesa::first();
 
         // Kirim data ke view
-        return view('beranda', compact('menuItems', 'services', 'profil'));
+        return view('beranda', compact('menuItems', 'services'));
     }
 }

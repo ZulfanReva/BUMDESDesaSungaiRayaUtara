@@ -45,9 +45,9 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/superadmin', [SuperAdminController::class, 'index'])->name('superadmin.dashboard');
     Route::get('/superadmin/layouts', [SuperAdminController::class, 'layouts'])->name('superadmin.layouts');
-    Route::post('/superadmin/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('superadmin.profil-desa.update');
+    // Route untuk update profil desa
+    Route::post('/superadmin/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('superadmin.layouts.update');
 });
-
 
 
 // Profile routes (Breeze ProfileController)
