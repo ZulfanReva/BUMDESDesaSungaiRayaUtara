@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
-<x-head title="404 | BUMDes Sungai Raya Utara"></x-head>
+<x-head title="Profil KKN | BUMDes Sungai Raya Utara"></x-head>
 
 <style>
     @keyframes float-in-404 {

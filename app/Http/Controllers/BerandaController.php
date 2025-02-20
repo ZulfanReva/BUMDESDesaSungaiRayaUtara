@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProfilDesa;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
 {
     public function index()
     {
-
         $services = [
             ['name' => 'Bisnis Sosial/Serving', 'route' => '#'],
             ['name' => 'Keuangan/Banking', 'route' => '#'],
@@ -26,7 +26,10 @@ class BerandaController extends Controller
             ['name' => 'Hubungi Kami', 'route' => 'beranda.index'],
         ];
 
+        // Ambil data profil desa dari database
+        $profil = ProfilDesa::first();
+
         // Kirim data ke view
-        return view('beranda', compact('menuItems', 'services'));
+        return view('beranda', compact('menuItems', 'services', 'profil'));
     }
 }

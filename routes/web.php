@@ -6,9 +6,11 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\LayoutsController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfilKKNController;
 use App\Http\Controllers\SuperAdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\ProfileController;
 
 // Halaman error 404
 Route::get('/404', function () {
@@ -18,28 +20,35 @@ Route::get('/404', function () {
 // Halaman utama
 Route::get('/', [BerandaController::class, 'index'])->name('beranda.index');
 
-// Untuk mengarah login
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
+Route::get('/profil-kkn', [ProfilKKNController::class, 'index'])->name('profil-kkn');
+
+// // Untuk mengarah login
+// Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
 
 // Route untuk halaman login
 Route::get('/dashboard', function () {
-    if (Auth::check()) {
-        return Auth::user()->role === 'superadmin'
-            ? redirect()->route('superadmin.dashboard')
-            : redirect()->route('admin.dashboard');
-    }
     return view('dashboard');
 })->name('dashboard')->middleware('auth');
+
+// Route untuk logut
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect()->route('beranda.index'); // Redirect ke halaman utama
+})->name('logout');
 
 // Route admin
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 });
 
-// Route superadmin
+// Route super admin
 Route::middleware(['auth'])->group(function () {
     Route::get('/superadmin', [SuperAdminController::class, 'index'])->name('superadmin.dashboard');
+    Route::get('/superadmin/layouts', [SuperAdminController::class, 'layouts'])->name('superadmin.layouts');
+    Route::post('/superadmin/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('superadmin.profil-desa.update');
 });
+
+
 
 // Profile routes (Breeze ProfileController)
 Route::middleware(['auth'])->group(function () {

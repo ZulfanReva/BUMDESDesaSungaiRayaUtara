@@ -11,7 +11,7 @@
         <div class="max-h-[475px]">
             <div class="flex justify-between items-stretch gap-7">
                 <!-- Bisnis Sosial/Serving -->
-                <a href="">
+                <a href="{{ route('error.404') }}">
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
@@ -58,7 +58,7 @@
                 </a> --}}
 
                 <!-- Bisnis Penyewaan/Renting -->
-                <a href="">
+                <a href="{{ route('error.404') }}">
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
@@ -81,7 +81,7 @@
                 </a>
 
                 <!-- Lembaga Perantara/Brokering -->
-                <a href="">
+                <a href="{{ route('error.404') }}">
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
@@ -104,7 +104,7 @@
                 </a>
 
                 <!-- Usaha Bersama -->
-                <a href="">
+                <a href="{{ route('error.404') }}">
                     <div class="group relative overflow-hidden">
                         <div
                             class="h-[475px] w-[250px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">

@@ -38,7 +38,7 @@
                         alt="logo">
                 </div>
             </div>
-            <div class="group">
+            {{-- <div class="group">
                 <div
                     class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">
                     <img src="assets/images/logos/logo-kemenkeu.png" class="w-full h-full object-contain"
@@ -60,7 +60,7 @@
                     <img src="assets/images/logos/logo-telkom-bw.png" class="w-full h-full object-contain"
                         alt="logo">
                 </div>
-            </div>
+            </div> --}}
             <div class="group">
                 <div
                     class="hidden w-[180px] h-[45px] shrink-0 overflow-hidden group-hover:block transition-all duration-300">

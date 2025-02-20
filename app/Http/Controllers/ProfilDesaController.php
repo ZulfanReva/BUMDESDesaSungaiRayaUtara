@@ -2,24 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Setting;
 use App\Models\ProfilDesa;
 use Illuminate\Http\Request;
 
-class SuperAdminController extends Controller
+class ProfilDesaController extends Controller
 {
     public function index()
     {
-        return view('rolesuperadmin.dashboard');
+        $profil = ProfilDesa::first();
+        return view('layouts', compact('profil'));
     }
 
-    public function layouts()
-    {
-        $profilDesa = ProfilDesa::first();
-        return view('rolesuperadmin.layouts', compact('profilDesa'));
-    }
-
-    public function updateProfilDesa(Request $request)
+    public function update(Request $request)
     {
         $profil = ProfilDesa::firstOrCreate([]);
 

@@ -4,8 +4,8 @@
         <div class="flex flex-row gap-[60px] items-center justify-between p-[50px]">
             <!-- Bagian Kiri: Teks -->
             <div class="flex flex-col gap-[40px] w-[50%]">
-                <div class="flex flex-col gap-[10px] text-weserve-beige">
-                    <h2 class="font-clash-display font-semibold text-[40px] ">Mulai Berkontribusi untuk
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="font-clash-display font-semibold text-[40px] text-gradient-beige ">Mulai Berkontribusi untuk
                         Masyarakat</h2>
                     <p class="leading-[32px] text-black">Kami menyediakan berbagai layanan untuk memberdayakan
                         masyarakat desa

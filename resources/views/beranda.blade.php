@@ -25,8 +25,7 @@
                             <h1
                                 class="font-clash-display text-[60px] leading-[100%] font-semibold min-h-[140px] line wave">
                                 <span class="line">BUMDes Penggerak</span><br>
-                                <span class="line"><span class="text-weserve-beige">Ekonomi Desa</span>
-</h1>
+                                <span class="line"><span class="text-gradient-beige">Ekonomi Desa</span></h1>
                             <p class="font-medium text-weserve-grey">Kami menyediakan berbagai layanan untuk
                                 memberdayakan masyarakat desa melalui pengelolaan usaha bersama.</p>
                         </div>

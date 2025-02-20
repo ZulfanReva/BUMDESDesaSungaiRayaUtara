@@ -97,7 +97,7 @@
 
         <!-- Tombol Lihat Semua Berita -->
         <div class="text-center mt-6">
-            <a href="/berita"
+            <a href="{{ route('error.404') }}"
                 class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
                 Lihat Semua Berita
             </a>

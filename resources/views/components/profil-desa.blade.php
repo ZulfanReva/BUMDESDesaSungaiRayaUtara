@@ -60,79 +60,33 @@
 
             <div class="max-w-[470px] space-y-[30px]">
                 <div class="tab-content space-y-[10px]" id="sejarah-desa">
-                    <h2 class="text-[32px] font-bold leading-[46px] font-clash-display">
-                        Sejarah Singkat Desa
-                    </h2>
-                    <p class="text-lg font-medium leading-8 text-justify">Bermula dari kumpulan masyarakat
-                        yang menetap, seiring berjalannya waktu pada tahun 1952, resmi
-                        sebuah desa dibentuk. Kini, desa ini telah berkembang menjadi desa yang maju dengan
-                        peran penting dalam pengelolaan sumber daya alam.</p>
-
+                    <h2 class="text-[32px] font-bold leading-[46px] font-clash-display">Sejarah Singkat Desa</h2>
+                    <p class="text-lg font-medium leading-8 text-justify">
+                        {{ $profil->sejarah_desa ?? 'Belum ada data sejarah desa.' }}
+                    </p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="visi-misi">
-                    <h2 class="text-[32px] font-bold leading-[46px]">
-                        Visi dan Misi Desa
-                    </h2>
+                    <h2 class="text-[32px] font-bold leading-[46px]">Visi dan Misi Desa</h2>
                     <p class="text-lg font-medium leading-8 text-justify">
-                        <strong>Visi:</strong> Terwujudnya Desa Sungai Raya Utara Yang Aman, Cerdas, Berakhlak Mulia
-                        serta Produktif dengan Pemerintahan Desa yang Terbuka.
-                    </p>
-                    <p class="text-lg font-medium leading-8 text-justify">
-                        <strong>Misi:</strong>
-                    </p>
-                    <ul class="list-disc pl-5">
-                        <li>Mewujudkan Keamanan dan Ketertiban dalam kehidupan beragama di Desa Sungai Raya Utara.</li>
-                        <li>Meningkatkan kinerja Aparatur Pemerintah Desa sebagai bentuk pelayanan kepada Masyarakat di
-                            Desa.</li>
-                        <li>Mewujudkan tata kelola Pemerintahan Desa yang Terpercaya, Efektif, Bersih, Transparan, dan
-                            Akuntabel sebagai tanggung jawab terhadap Masyarakat Desa.</li>
-                        <li>Meningkatkan Pertumbuhan Ekonomi Desa.</li>
-                        <li>Meningkatkan Kualitas Sumber Daya Manusia.</li>
-                        <li>Meningkatkan Pembangunan Infrastruktur Desa dari Segi Fisik, ekonomi, pendidikan, sosial
-                            budaya, dan kesehatan.</li>
-                        <li>Meningkatkan Pemberdayaan Masyarakat Desa.</li>
-                        <li>Meningkatkan Pembinaan Masyarakat Desa.</li>
-                    </ul>
-
+                        {{ $profil->visi_misi ?? 'Belum ada data visi dan misi desa.' }}
                     </p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="fasilitas-desa">
                     <h2 class="text-[32px] font-bold leading-[46px]">Fasilitas Desa</h2>
-                    <p class="text-lg font-medium leading-8 text-justify">Desa kami menyediakan fasilitas
-                        lengkap untuk
-                        mendukung kesejahteraan warga, seperti akses pendidikan, layanan kesehatan, halte bus, tempat
-                        ibadah, dan keamanan yang didukung dengan Polsek Sungai Raya.</p>
+                    <p class="text-lg font-medium leading-8 text-justify">
+                        {{ $profil->fasilitas_desa ?? 'Belum ada data fasilitas desa.' }}
+                    </p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="prestasi-desa">
-                    <h2 class="text-[32px] font-bold leading-[46px]">Prestasi Desa
-                    </h2>
-                    <p class="text-lg font-medium leading-8 text-justify">Desa kami telah meraih berbagai
-                        penghargaan sepert:
+                    <h2 class="text-[32px] font-bold leading-[46px]">Prestasi Desa</h2>
+                    <p class="text-lg font-medium leading-8 text-justify">
+                        {{ $profil->prestasi_desa ?? 'Belum ada data prestasi desa.' }}
                     </p>
-                    <ul class="list-disc pl-5">
-                        <li>Inovasi Terbaik 2, HSS Innovation Award (HIA) 2024</li>
-                        <li>Terbaik 2, Pengelolaan Keuangan Terbaik Pada Pemilihan Serentak 2024 (KPU)</li>
-                        <li>Top 30, HSS Innovation Award (HIA) 2021 dan 2022.</li>
-                    </ul>
                 </div>
 
-                {{-- <ul class="space-y-5">
-                    <li class="flex items-center text-lg font-bold">
-                        <img src="assets/images/icons/checklist.svg" alt="" class="mr-3" />
-                        Auto running when reaches certain number
-                    </li>
-                    <li class="flex items-center text-lg font-bold">
-                        <img src="assets/images/icons/checklist.svg" alt="" class="mr-3" />
-                        Sending message to server for repeatation
-                    </li>
-                    <li class="flex items-center text-lg font-bold">
-                        <img src="assets/images/icons/checklist.svg" alt="" class="mr-3" />
-                        Reporting and extracting the data
-                    </li>
-                </ul> --}}
                 <div>
                     <a href="https://maps.app.goo.gl/6QcAhRHxBJJ7LPuy7" target="_blank"
                         class="rounded-full border border-weserve-beige px-4 py-2 font-semibold hover:bg-weserve-beige-gradient hover:text-white">
@@ -145,44 +99,73 @@
 </section>
 
 <script>
-    // Ambil semua button-tab dan tab-content
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
+    document.addEventListener("DOMContentLoaded", function() {
+        // Ambil semua button-tab, tab-content, dan footer links
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+        const footerLinks = document.querySelectorAll("footer a[data-tab]");
 
-    // Fungsi untuk mengubah tab yang aktif
-    function switchTab(selectedTab) {
-        // Sembunyikan semua konten, hilangkan border aktif, dan reset warna icon-wrapper
-        tabContents.forEach(content => content.classList.add('hidden'));
-        tabButtons.forEach(button => {
-            button.classList.remove('border-weserve-beige');
-            const iconWrapper = button.querySelector('.icon-wrapper');
-            if (iconWrapper) {
-                iconWrapper.style.backgroundColor = '#ABB4B1'; // Reset ke abu-abu
+        // Fungsi untuk mengganti tab yang aktif
+        function switchTab(tabId) {
+            // Sembunyikan semua konten tab
+            tabContents.forEach((content) => content.classList.add("hidden"));
+
+            // Reset semua button-tab
+            tabButtons.forEach((button) => {
+                button.classList.remove("border-weserve-beige");
+                const iconWrapper = button.querySelector(".icon-wrapper");
+                if (iconWrapper) {
+                    iconWrapper.style.backgroundColor = "#ABB4B1"; // Reset ke abu-abu
+                }
+            });
+
+            // Temukan button-tab yang sesuai dengan data-tab
+            const targetTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+            const activeTabContent = document.getElementById(tabId);
+
+            if (targetTabButton && activeTabContent) {
+                // Aktifkan tab yang dipilih
+                activeTabContent.classList.remove("hidden");
+                targetTabButton.classList.add("border-weserve-beige");
+
+                // Ubah warna icon-wrapper tombol yang dipilih
+                const activeIconWrapper = targetTabButton.querySelector(".icon-wrapper");
+                if (activeIconWrapper) {
+                    activeIconWrapper.style.backgroundColor = "#6b4f3f"; // Ubah ke cokelat
+                }
             }
+        }
+
+        // Set default tab ke "Sejarah Desa"
+        switchTab("sejarah-desa");
+
+        // Event listener untuk setiap tombol tab di dalam section profil-desa
+        tabButtons.forEach((button) => {
+            button.addEventListener("click", function() {
+                const tabId = button.getAttribute("data-tab");
+                switchTab(tabId);
+            });
         });
 
-        // Tampilkan konten yang sesuai dengan tombol tab yang dipilih
-        const tabId = selectedTab.getAttribute('data-tab');
-        const activeTabContent = document.getElementById(tabId);
-        activeTabContent.classList.remove('hidden');
+        // Event listener untuk tautan di footer
+        footerLinks.forEach((link) => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault(); // Mencegah scroll default
 
-        // Tambahkan border aktif pada tombol yang dipilih
-        selectedTab.classList.add('border-weserve-beige');
+                const tabId = link.getAttribute("data-tab");
 
-        // Ubah warna icon-wrapper tombol yang dipilih
-        const activeIconWrapper = selectedTab.querySelector('.icon-wrapper');
-        if (activeIconWrapper) {
-            activeIconWrapper.style.backgroundColor = '#6b4f3f'; // Ubah ke cokelat
-        }
-    }
+                // Aktifkan tab yang sesuai
+                switchTab(tabId);
 
-    // Event listener untuk setiap tombol tab
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            switchTab(button);
+                // Scroll ke section Profil Desa
+                const profilDesaSection = document.getElementById("profil-desa");
+                if (profilDesaSection) {
+                    profilDesaSection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
         });
     });
-
-    // Set tab pertama sebagai aktif secara default
-    switchTab(tabButtons[0]);
 </script>

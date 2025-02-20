@@ -23,6 +23,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    @if (Auth::check() && Auth::user()->role === 'Super Admin')
+                        <x-nav-link :href="route('superadmin.layouts')" :active="request()->routeIs('superadmin.layouts')">
+                            {{ __('Layouts') }}
+                        </x-nav-link>
+                    @endif
                 </div>
             </div>
 

@@ -12,7 +12,7 @@
     <title>{{ $title }}</title>
 
     <!-- Favicons -->
-    <link href="assets/images/logos/logo-bumdes-polos-white.png" rel="icon" sizes="64x64">
+    <link href="{{ asset('assets/images/logos/logo-bumdes-polos-white.png') }}" rel="icon" sizes="64x64">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -39,7 +39,7 @@
 
         <!-- Page Content -->
         <main>
-            @yield('content')
+            {{ $slot }}
         </main>
     </div>
 </body>

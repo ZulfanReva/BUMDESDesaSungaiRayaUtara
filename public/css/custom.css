@@ -1,4 +1,4 @@
-/*! Color CSS BUMDes */
+/*! Custom CSS BUMDes */
 
 /*! Animasi Scroll */
 html {
@@ -13,6 +13,12 @@ html {
 /* Text color */
 .text-weserve-beige {
     color: #6b4f3f !important; /* Gantilah dengan kode warna yang Anda gunakan */
+}
+
+.text-gradient-beige {
+    background: linear-gradient(310deg, #6b4f3f, #b88f7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hover\:text-weserve-beige:hover {
