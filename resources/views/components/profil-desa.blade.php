@@ -1,4 +1,11 @@
 <section id="profil-desa" class="relative w-full pt-[100px]">
+    <!-- Debugging section untuk memastikan data tersedia -->
+    @if (!isset($profil))
+        <div style="background: #ff6b6b; color: white; padding: 10px; margin: 10px; text-align: center;">
+            <p>Perhatian: Variabel $profil tidak tersedia di view.</p>
+        </div>
+    @endif
+
     <div class="mx-auto max-w-[1280px] space-y-[50px] px-[124px]">
         <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Profil Desa</h2>
@@ -47,7 +54,6 @@
                     class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1] transition-all duration-300">
                     <img src="assets/images/icons/prestasi-desa-white.png" alt="Prestasi Desa"
                         class="icon stroke-white transition-all duration-300" style="width: 40px; height: 40px;" />
-
                 </div>
                 <span class="text-xl">Prestasi Desa</span>
             </button>
@@ -62,29 +68,37 @@
                 <div class="tab-content space-y-[10px]" id="sejarah-desa">
                     <h2 class="text-[32px] font-bold leading-[46px] font-clash-display">Sejarah Singkat Desa</h2>
                     <p class="text-lg font-medium leading-8 text-justify">
-                        {{ $profil->sejarah_desa ?? 'Belum ada data sejarah desa.' }}
+                        {!! $profil->sejarah_desa ?? 'Belum ada data sejarah desa.' !!}
                     </p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="visi-misi">
                     <h2 class="text-[32px] font-bold leading-[46px]">Visi dan Misi Desa</h2>
-                    <p class="text-lg font-medium leading-8 text-justify">
-                        {{ $profil->visi_misi ?? 'Belum ada data visi dan misi desa.' }}
-                    </p>
+                    <div class="text-lg font-medium leading-8 text-justify">
+                        @if (isset($profil->visi_misi))
+                            {!! nl2br(e($profil->visi_misi)) !!}
+                        @else
+                            Belum ada data visi dan misi desa.
+                        @endif
+                    </div>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="fasilitas-desa">
                     <h2 class="text-[32px] font-bold leading-[46px]">Fasilitas Desa</h2>
                     <p class="text-lg font-medium leading-8 text-justify">
-                        {{ $profil->fasilitas_desa ?? 'Belum ada data fasilitas desa.' }}
+                        {!! $profil->fasilitas_desa ?? 'Belum ada data fasilitas desa.' !!}
                     </p>
                 </div>
 
                 <div class="tab-content hidden space-y-[10px]" id="prestasi-desa">
                     <h2 class="text-[32px] font-bold leading-[46px]">Prestasi Desa</h2>
-                    <p class="text-lg font-medium leading-8 text-justify">
-                        {{ $profil->prestasi_desa ?? 'Belum ada data prestasi desa.' }}
-                    </p>
+                    <div class="text-lg font-medium leading-8 text-justify">
+                        @if (isset($profil->prestasi_desa))
+                            {!! nl2br(e($profil->prestasi_desa)) !!}
+                        @else
+                            Belum ada data prestasi desa.
+                        @endif
+                    </div>
                 </div>
 
                 <div>
