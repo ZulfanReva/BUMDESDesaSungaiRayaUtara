@@ -68,8 +68,9 @@
     </div>
 
     <!-- Modal -->
+    <!-- Modal -->
     <div id="editModal"
-        class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden transition-opacity">
+        class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300">
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[500px]">
             <h2 class="text-[32px] font-bold leading-[46px] font-clash-display text-gray-900 dark:text-gray-100"
                 id="modalTitle">Edit Layout</h2>
@@ -102,18 +103,50 @@
     </div>
 
     <!-- Script Modal dan Form Auto-Fill -->
+    <!-- Modal -->
+    <div id="editModal"
+        class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-[500px]">
+            <h2 class="text-[32px] font-bold leading-[46px] font-clash-display text-gray-900 dark:text-gray-100"
+                id="modalTitle">Edit Layout</h2>
+
+            <form id="editForm">
+                @csrf
+                <div class="mb-4">
+                    <label class="block text-gray-700 dark:text-gray-300">Judul:</label>
+                    <input type="text" id="title" name="title"
+                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white" readonly>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 dark:text-gray-300">Deskripsi:</label>
+                    <textarea id="description" name="description" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white"></textarea>
+                </div>
+
+                <input type="hidden" id="dbFieldName" name="dbFieldName" value="">
+
+                <div class="flex justify-end">
+                    <button type="button"
+                        class="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition mr-2"
+                        onclick="closeModal()">Batal</button>
+                    <button type="submit"
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script>
-        // Keep original function for working buttons
         function openModal(section, content) {
             document.getElementById('modalTitle').innerText = section;
             document.getElementById('title').value = section;
             document.getElementById('description').value = content;
             document.getElementById('dbFieldName').value = '';
-            document.getElementById('editModal').classList.remove('hidden');
-            console.log("Regular modal opened for: " + section);
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            console.log("Modal opened for: " + section);
         }
 
-        // New function specifically for problematic buttons
         function openModalCustom(buttonElement) {
             const section = buttonElement.getAttribute('data-section');
             const content = buttonElement.getAttribute('data-content');
@@ -123,67 +156,14 @@
             document.getElementById('title').value = section;
             document.getElementById('description').value = content;
             document.getElementById('dbFieldName').value = fieldName;
-            document.getElementById('editModal').classList.remove('hidden');
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
             console.log("Custom modal opened for: " + section + ", field: " + fieldName);
         }
 
         function closeModal() {
-            document.getElementById('editModal').classList.add('hidden');
+            const modal = document.getElementById('editModal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
         }
-
-        document.getElementById('editForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            let title = document.getElementById('title').value;
-            let description = document.getElementById('description').value;
-            let dbField = document.getElementById('dbFieldName').value;
-
-            console.log("Form submitted with title: " + title);
-            console.log("DB field from hidden input: " + dbField);
-
-            let formData = new FormData();
-            formData.append('_token', '{{ csrf_token() }}');
-
-            // For problematic buttons, use the hidden field value if available
-            if (dbField) {
-                formData.append(dbField, description);
-                console.log("Using field from data attribute: " + dbField);
-            } else {
-                // Original logic for working buttons
-                if (title === 'Sejarah Desa') {
-                    formData.append('sejarah_desa', description);
-                    console.log("Appending sejarah_desa");
-                } else if (title === 'Fasilitas Desa') {
-                    formData.append('fasilitas_desa', description);
-                    console.log("Appending fasilitas_desa");
-                }
-            }
-
-            // Debug output of all form data
-            console.log("--- Form Data ---");
-            for (var pair of formData.entries()) {
-                console.log(pair[0] + ': ' + pair[1]);
-            }
-
-            fetch("{{ route('superadmin.profil-desa.update') }}", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => {
-                    console.log("Response status: " + response.status);
-                    return response.json();
-                })
-                .then(data => {
-                    console.log("Success:", data);
-                    alert(data.message);
-                    closeModal();
-                    location.reload();
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Error: " + error);
-                });
-        });
     </script>
-
 </x-app-layout>
