@@ -1,7 +1,7 @@
 <x-app-layout title="Layouts - {{ ucfirst(Auth::user()->role) }}">
     <x-slot name="header">
         <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-            Layouts - {{ ucfirst(Auth::user()->role) }}
+            Layouts Management
         </h2>
     </x-slot>
 

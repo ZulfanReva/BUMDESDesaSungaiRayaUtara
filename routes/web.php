@@ -42,11 +42,20 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // Route super admin
-Route::middleware(['auth'])->group(function () {
-    Route::get('/superadmin', [SuperAdminController::class, 'index'])->name('superadmin.dashboard');
-    Route::get('/superadmin/layouts', [SuperAdminController::class, 'layouts'])->name('superadmin.layouts');
-    // Route untuk update profil desa
-    Route::post('/superadmin/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('superadmin.layouts.update');
+Route::middleware(['auth'])->prefix('superadmin')->name('superadmin.')->group(function () {
+    // Dashboard Super Admin
+    Route::get('/', [SuperAdminController::class, 'index'])->name('dashboard');
+
+    // Layouts & Profil Desa
+    Route::get('/layouts', [SuperAdminController::class, 'layouts'])->name('layouts');
+    Route::post('/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('layouts.update');
+
+    // Manajemen Akun Admin
+    Route::get('/account', [SuperAdminController::class, 'account'])->name('account');
+    Route::post('/account/store', [SuperAdminController::class, 'storeAccount'])->name('account.store');
+    Route::put('/account/update/{id}', [SuperAdminController::class, 'updateAccount'])->name('account.update');
+    Route::patch('/account/reset-password/{id}', [SuperAdminController::class, 'resetAccountPassword'])->name('account.resetPassword');
+    Route::delete('/account/destroy/{id}', [SuperAdminController::class, 'destroyAccount'])->name('account.destroy');
 });
 
 

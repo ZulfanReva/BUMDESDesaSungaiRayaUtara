@@ -28,6 +28,10 @@
                         <x-nav-link :href="route('superadmin.layouts')" :active="request()->routeIs('superadmin.layouts')">
                             {{ __('Layouts') }}
                         </x-nav-link>
+
+                        <x-nav-link :href="route('superadmin.account')" :active="request()->routeIs('superadmin.account')">
+                            {{ __('Account') }}
+                        </x-nav-link>
                     @endif
                 </div>
             </div>

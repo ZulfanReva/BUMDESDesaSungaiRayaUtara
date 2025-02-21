@@ -1,11 +1,4 @@
 <section id="profil-desa" class="relative w-full pt-[100px]">
-    <!-- Debugging section untuk memastikan data tersedia -->
-    @if (!isset($profil))
-        <div style="background: #ff6b6b; color: white; padding: 10px; margin: 10px; text-align: center;">
-            <p>Perhatian: Variabel $profil tidak tersedia di view.</p>
-        </div>
-    @endif
-
     <div class="mx-auto max-w-[1280px] space-y-[50px] px-[124px]">
         <div class="space-y-3 text-center">
             <h2 class="text-[50px] font-clash-display font-extrabold">Profil Desa</h2>
