@@ -3,6 +3,7 @@
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\RoleMiddleware;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BerandaController;
@@ -36,21 +37,35 @@ Route::post('/logout', function () {
     return redirect()->route('beranda.index'); // Redirect ke halaman utama
 })->name('logout');
 
+Route::get('auth/google/callback', function () {
+    $googleUser = Socialite::driver('google')->user();
+
+    $user = User::updateOrCreate(
+        ['email' => $googleUser->getEmail()],
+        [
+            'nama' => $googleUser->getName(),
+            'email' => $googleUser->getEmail(),
+            'password' => bcrypt(str()->random(16)),
+            'google_id' => $googleUser->getId(),
+            'role' => 'Admin', // Konsisten dengan migration
+        ]
+    );
+
+    Auth::login($user);
+
+    return redirect()->route('dashboard');
+});
+
 // Route admin
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', RoleMiddleware::class . ':Admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 });
 
 // Route super admin
-Route::middleware(['auth'])->prefix('superadmin')->name('superadmin.')->group(function () {
-    // Dashboard Super Admin
+Route::middleware(['auth', RoleMiddleware::class . ':Super Admin'])->prefix('superadmin')->name('superadmin.')->group(function () {
     Route::get('/', [SuperAdminController::class, 'index'])->name('dashboard');
-
-    // Layouts & Profil Desa
     Route::get('/layouts', [SuperAdminController::class, 'layouts'])->name('layouts');
     Route::post('/layouts/update', [SuperAdminController::class, 'updateProfilDesa'])->name('layouts.update');
-
-    // Manajemen Akun Admin
     Route::get('/account', [SuperAdminController::class, 'account'])->name('account');
     Route::post('/account/store', [SuperAdminController::class, 'storeAccount'])->name('account.store');
     Route::put('/account/update/{id}', [SuperAdminController::class, 'updateAccount'])->name('account.update');

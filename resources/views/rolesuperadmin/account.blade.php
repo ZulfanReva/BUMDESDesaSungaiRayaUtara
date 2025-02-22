@@ -106,7 +106,7 @@
                 <div class="mb-4">
                     <label class="block text-gray-700 dark:text-gray-300">Role:</label>
                     <input type="text" id="role" name="role" value="Admin"
-                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-gray-400 italic bg-gray-200 dark:bg-gray-700"
+                        class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-gray-400 italic bg-gray-200"
                         readonly placeholder="Role Pengguna">
                 </div>
 
